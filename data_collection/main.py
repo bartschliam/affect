@@ -25,7 +25,9 @@ def query_api():
         'movies', 
         'facepalm',
         'funny',
-        'aww'
+        'aww',
+        'bunnies', 
+        'lgbt'
     ]
     num_posts = 100
     last_request_time = time.time()
