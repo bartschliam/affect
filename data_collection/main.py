@@ -5,6 +5,7 @@ import os
 import emoji
 import time
 import json
+from pprint import pprint
 
 
 def query_api():
@@ -27,24 +28,42 @@ def query_api():
         'bunnies',
         'lgbt',
         # 'socialskills',
-        #'movies',
+        # 'movies',
         'facepalm',
     ]
     num_posts = 100
     found = False
     last_request_time = time.time()
-    titles_and_emojis = {}
+    try:
+        with open('titles_and_emojis.json', 'r') as f:
+            data = json.load(f)
+    except json.JSONDecodeError:
+        data = {}
+    titles_and_emojis = data
+    if 'searched_subs' not in titles_and_emojis:
+        titles_and_emojis['searched_subs'] = {
+            'list': [],
+            'count': 0
+        }
+    if 'searched_posts' not in titles_and_emojis:
+        titles_and_emojis['searched_posts'] = {
+            'count': 0,
+            'found': 0
+        }
     for subreddit in subreddits:
         print(f'Subreddit: {subreddit}')
-        for i, post in enumerate(reddit.subreddit(subreddit).new(limit=num_posts)):
-            print(f"Index: {i}, Post: {post.title}")
+        titles_and_emojis['searched_subs']['list'].append(subreddit)
+        titles_and_emojis['searched_subs']['count'] += 1
+        for post_index, post in enumerate(reddit.subreddit(subreddit).new(limit=num_posts)):
+            print(f"Number: {post_index}, Post: {post.title}")
+            titles_and_emojis['searched_posts']['count'] += 1
             if last_request_time is not None and time.time() - last_request_time < 1:
                 time_to_wait = 1 - (time.time() - last_request_time)
-                #print(f"Waiting for {time_to_wait:.1f} seconds before next request...")
                 time.sleep(time_to_wait)
             title = post.title
             emojis = [c for c in title if c in emoji.EMOJI_DATA]
             if emojis:
+                titles_and_emojis['searched_posts']['found'] += 1
                 for item in emojis:
                     emoji_hex = item
                     if emoji_hex in titles_and_emojis:
@@ -54,9 +73,7 @@ def query_api():
                         titles_and_emojis[emoji_hex] = {}
                         titles_and_emojis[emoji_hex]['frequency'] = 1
                         titles_and_emojis[emoji_hex]['subreddits'] = [subreddit]
-                #found = True
-                #titles_and_emojis.append((title, emojis))
-
+                # found = True
             last_request_time = time.time()
             if found:
                 break
@@ -68,13 +85,12 @@ def query_api():
 
 
 def format_json():
-    with open('titles_and_emojis.json', 'r') as f:
-        data = json.load(f)
-    formatted_data = {}
-    # for item in data:
-    #     formatted_data[item[0]] = item[1]
-
-    print(formatted_data)
+    try:
+        with open('titles_and_emojis.json', 'r') as f:
+            data = json.load(f)
+    except json.JSONDecodeError:
+        data = {}
+    pprint(data)
     return
 
 
