@@ -26,8 +26,8 @@ def query_api():
         'aww',
         'bunnies',
         'lgbt',
-        'socialskills',
-        'movies',
+        # 'socialskills',
+        #'movies',
         'facepalm',
     ]
     num_posts = 100
