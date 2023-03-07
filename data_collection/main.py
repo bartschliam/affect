@@ -27,10 +27,42 @@ def query_api():
         'aww',
         'bunnies',
         'lgbt',
-        # 'socialskills',
-        # 'movies',
         'facepalm',
+        'travel',
+        'food',
+        'fitness',
+        'music',
+        'movies',
+        'books',
+        'art',
+        'science',
+        'technology',
+        'politics',
+        'news',
+        'sports',
+        'fashion',
+        'beauty',
+        'relationships',
+        'parenting',
+        'gardening',
+        'cars',
+        'finance',
+        'business',
+        'education',
+        'history',
+        'philosophy',
+        'spirituality',
+        'pets',
+        'photography',
+        'design',
+        'comics',
+        'anime',
+        'hiking',
+        'fishing',
+        'skateboarding',
+        'snowboarding',
     ]
+
     num_posts = 100
     found = False
     last_request_time = time.time()
@@ -42,7 +74,6 @@ def query_api():
     titles_and_emojis = data
     if 'searched_subs' not in titles_and_emojis:
         titles_and_emojis['searched_subs'] = {
-            'list': [],
             'count': 0
         }
     if 'searched_posts' not in titles_and_emojis:
@@ -52,8 +83,9 @@ def query_api():
         }
     for subreddit in subreddits:
         print(f'Subreddit: {subreddit}')
-        titles_and_emojis['searched_subs']['list'].append(subreddit)
-        titles_and_emojis['searched_subs']['count'] += 1
+        if subreddit not in titles_and_emojis['searched_subs']:
+            titles_and_emojis['searched_subs'][subreddit] = 0
+            titles_and_emojis['searched_subs']['count'] += 1
         for post_index, post in enumerate(reddit.subreddit(subreddit).new(limit=num_posts)):
             print(f"Number: {post_index}, Post: {post.title}")
             titles_and_emojis['searched_posts']['count'] += 1
@@ -64,15 +96,18 @@ def query_api():
             emojis = [c for c in title if c in emoji.EMOJI_DATA]
             if emojis:
                 titles_and_emojis['searched_posts']['found'] += 1
+                titles_and_emojis['searched_subs'][subreddit] += 1
                 for item in emojis:
                     emoji_hex = item
                     if emoji_hex in titles_and_emojis:
                         titles_and_emojis[emoji_hex]['frequency'] += 1
                         titles_and_emojis[emoji_hex]['subreddits'].append(subreddit)
+                        titles_and_emojis[emoji_hex]['titles'].append(title)
                     else:
                         titles_and_emojis[emoji_hex] = {}
                         titles_and_emojis[emoji_hex]['frequency'] = 1
                         titles_and_emojis[emoji_hex]['subreddits'] = [subreddit]
+                        titles_and_emojis[emoji_hex]['titles'] = [title]
                 # found = True
             last_request_time = time.time()
             if found:
