@@ -6,6 +6,7 @@ import emoji
 import time
 import json
 from pprint import pprint
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 def query_api():
@@ -66,6 +67,8 @@ def query_api():
     num_posts = 100
     found = False
     last_request_time = time.time()
+    sentiment = SentimentIntensityAnalyzer()
+
     try:
         with open('titles_and_emojis.json', 'r') as f:
             data = json.load(f)
@@ -103,11 +106,13 @@ def query_api():
                         titles_and_emojis[emoji_hex]['frequency'] += 1
                         titles_and_emojis[emoji_hex]['subreddits'].append(subreddit)
                         titles_and_emojis[emoji_hex]['titles'].append(title)
+                        titles_and_emojis[emoji_hex]['sentiment'].append(sentiment.polarity_scores(title))
                     else:
                         titles_and_emojis[emoji_hex] = {}
                         titles_and_emojis[emoji_hex]['frequency'] = 1
                         titles_and_emojis[emoji_hex]['subreddits'] = [subreddit]
                         titles_and_emojis[emoji_hex]['titles'] = [title]
+                        titles_and_emojis[emoji_hex]['sentiment'] = [sentiment.polarity_scores(title)]
                 # found = True
             last_request_time = time.time()
             if found:
