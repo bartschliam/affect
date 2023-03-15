@@ -7,6 +7,9 @@ import time
 import json
 from pprint import pprint
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+import nltk
 
 
 def query_api():
@@ -63,32 +66,20 @@ def query_api():
         'skateboarding',
         'snowboarding',
     ]
-
     num_posts = 100
     found = False
     last_request_time = time.time()
     sentiment = SentimentIntensityAnalyzer()
-
-    try:
-        with open('titles_and_emojis.json', 'r') as f:
-            data = json.load(f)
-    except json.JSONDecodeError:
-        data = {}
-    titles_and_emojis = data
-    if 'searched_subs' not in titles_and_emojis:
-        titles_and_emojis['searched_subs'] = {
-            'count': 0
-        }
-    if 'searched_posts' not in titles_and_emojis:
-        titles_and_emojis['searched_posts'] = {
-            'count': 0,
-            'found': 0
-        }
+    nltk.download('stopwords')
+    nltk.download('punkt')
+    stop_words = set(stopwords.words('english'))
+    titles_and_emojis = {}
+    titles_and_emojis['searched_subs'] = {'count': 0}
+    titles_and_emojis['searched_posts'] = {'count': 0, 'found': 0}
     for subreddit in subreddits:
         print(f'Subreddit: {subreddit}')
-        if subreddit not in titles_and_emojis['searched_subs']:
-            titles_and_emojis['searched_subs'][subreddit] = 0
-            titles_and_emojis['searched_subs']['count'] += 1
+        titles_and_emojis['searched_subs'][subreddit] = 0
+        titles_and_emojis['searched_subs']['count'] += 1
         for post_index, post in enumerate(reddit.subreddit(subreddit).new(limit=num_posts)):
             print(f"Number: {post_index}, Post: {post.title}")
             titles_and_emojis['searched_posts']['count'] += 1
@@ -96,24 +87,24 @@ def query_api():
                 time_to_wait = 1 - (time.time() - last_request_time)
                 time.sleep(time_to_wait)
             title = post.title
+            title = ' '.join([word for word in word_tokenize(title) if word.lower() not in stop_words])
             emojis = [c for c in title if c in emoji.EMOJI_DATA]
             if emojis:
                 titles_and_emojis['searched_posts']['found'] += 1
                 titles_and_emojis['searched_subs'][subreddit] += 1
-                for item in emojis:
-                    emoji_hex = item
-                    if emoji_hex in titles_and_emojis:
-                        titles_and_emojis[emoji_hex]['frequency'] += 1
-                        titles_and_emojis[emoji_hex]['subreddits'].append(subreddit)
-                        titles_and_emojis[emoji_hex]['titles'].append(title)
-                        titles_and_emojis[emoji_hex]['sentiment'].append(sentiment.polarity_scores(title))
+                for emoji_code in emojis:
+                    if emoji_code in titles_and_emojis:
+                        titles_and_emojis[emoji_code]['frequency'] += 1
+                        titles_and_emojis[emoji_code]['subreddits'].append(subreddit)
+                        titles_and_emojis[emoji_code]['titles'].append(title)
+                        titles_and_emojis[emoji_code]['sentiment'].append(sentiment.polarity_scores(title))
                     else:
-                        titles_and_emojis[emoji_hex] = {}
-                        titles_and_emojis[emoji_hex]['frequency'] = 1
-                        titles_and_emojis[emoji_hex]['subreddits'] = [subreddit]
-                        titles_and_emojis[emoji_hex]['titles'] = [title]
-                        titles_and_emojis[emoji_hex]['sentiment'] = [sentiment.polarity_scores(title)]
-                # found = True
+                        titles_and_emojis[emoji_code] = {}
+                        titles_and_emojis[emoji_code]['frequency'] = 1
+                        titles_and_emojis[emoji_code]['subreddits'] = [subreddit]
+                        titles_and_emojis[emoji_code]['titles'] = [title]
+                        titles_and_emojis[emoji_code]['sentiment'] = [sentiment.polarity_scores(title)]
+                found = True
             last_request_time = time.time()
             if found:
                 break
