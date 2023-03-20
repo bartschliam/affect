@@ -1,10 +1,10 @@
 {
-  "searched_subs": { "count": 1, "cloudwater": 1 },
-  "searched_posts": { "count": 1, "found": 1 },
+  "searched_subs": { "count": 1, "cloudwater": 2 },
+  "searched_posts": { "count": 1, "found": 2 },
   "\ud83d\ude80": {
     "frequency": 1,
     "subreddits": ["cloudwater"],
-    "titles": ["Testing Emoji \ud83d\ude80 \ud83d\ude02"],
+    "ids": ["11kxsrk"],
     "sentiment": [
       { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 }
     ]
@@ -12,7 +12,7 @@
   "\ud83d\ude02": {
     "frequency": 1,
     "subreddits": ["cloudwater"],
-    "titles": ["Testing Emoji \ud83d\ude80 \ud83d\ude02"],
+    "ids": ["11kxsrk"],
     "sentiment": [
       { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 }
     ]

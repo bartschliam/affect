@@ -10,9 +10,10 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import nltk
+from json.decoder import JSONDecodeError
 
 
-def query_api():
+def load_credentials():
     load_dotenv()
     client_id = os.getenv('client_id')
     client_secret = os.getenv('client_secret')
@@ -24,47 +25,52 @@ def query_api():
         user_agent='Affect Analysis Bot for various subreddits v1.0 by u/username',
         password=password,
         username=reddit_username)
+    return reddit
+
+
+def query_api():
+    reddit = load_credentials()
     subreddits = [
         'cloudwater',
-        'gaming',
-        'funny',
-        'aww',
-        'bunnies',
-        'lgbt',
-        'facepalm',
-        'travel',
-        'food',
-        'fitness',
-        'music',
-        'movies',
-        'books',
-        'art',
-        'science',
-        'technology',
-        'politics',
-        'news',
-        'sports',
-        'fashion',
-        'beauty',
-        'relationships',
-        'parenting',
-        'gardening',
-        'cars',
-        'finance',
-        'business',
-        'education',
-        'history',
-        'philosophy',
-        'spirituality',
-        'pets',
-        'photography',
-        'design',
-        'comics',
         'anime',
-        'hiking',
+        'art',
+        'aww',
+        'beauty',
+        'books',
+        'bunnies',
+        'business',
+        'cars',
+        'comics',
+        'design',
+        'education',
+        'facepalm',
+        'fashion',
+        'finance',
         'fishing',
+        'fitness',
+        'food',
+        'funny',
+        'gaming',
+        'gardening',
+        'hiking',
+        'history',
+        'lgbt',
+        'movies',
+        'music',
+        'news',
+        'parenting',
+        'pets',
+        'philosophy',
+        'photography',
+        'politics',
+        'relationships',
+        'science',
         'skateboarding',
         'snowboarding',
+        'spirituality',
+        'sports',
+        'technology',
+        'travel',
     ]
     num_posts = 100
     found = False
@@ -73,13 +79,27 @@ def query_api():
     nltk.download('stopwords')
     nltk.download('punkt')
     stop_words = set(stopwords.words('english'))
-    titles_and_emojis = {}
-    titles_and_emojis['searched_subs'] = {'count': 0}
-    titles_and_emojis['searched_posts'] = {'count': 0, 'found': 0}
+    try:
+        with open('titles_and_emojis.json', 'r') as f:
+            titles_and_emojis = json.load(f)
+    except JSONDecodeError:
+        titles_and_emojis = {}
+        pass
+    if 'searched_subs' not in titles_and_emojis:
+        titles_and_emojis['searched_subs'] = {
+            'count': 0
+        }
+    if 'searched_posts' not in titles_and_emojis:
+        titles_and_emojis['searched_posts'] = {
+            'count': 0,
+            'found': 0
+        }
     for subreddit in subreddits:
         print(f'Subreddit: {subreddit}')
-        titles_and_emojis['searched_subs'][subreddit] = 0
-        titles_and_emojis['searched_subs']['count'] += 1
+        if subreddit not in titles_and_emojis['searched_subs']:
+            titles_and_emojis['searched_subs'][subreddit] = 0
+            titles_and_emojis['searched_subs']['count'] += 1
+
         for post_index, post in enumerate(reddit.subreddit(subreddit).new(limit=num_posts)):
             print(f"Number: {post_index}, Post: {post.title}")
             titles_and_emojis['searched_posts']['count'] += 1
@@ -90,21 +110,25 @@ def query_api():
             title = ' '.join([word for word in word_tokenize(title) if word.lower() not in stop_words])
             emojis = [c for c in title if c in emoji.EMOJI_DATA]
             if emojis:
-                titles_and_emojis['searched_posts']['found'] += 1
-                titles_and_emojis['searched_subs'][subreddit] += 1
+                post_id = post.id
                 for emoji_code in emojis:
                     if emoji_code in titles_and_emojis:
-                        titles_and_emojis[emoji_code]['frequency'] += 1
-                        titles_and_emojis[emoji_code]['subreddits'].append(subreddit)
-                        titles_and_emojis[emoji_code]['titles'].append(title)
-                        titles_and_emojis[emoji_code]['sentiment'].append(sentiment.polarity_scores(title))
+                        if post_id not in titles_and_emojis[emoji_code]['ids']:
+                            titles_and_emojis[emoji_code]['frequency'] += 1
+                            titles_and_emojis[emoji_code]['subreddits'].append(subreddit)
+                            titles_and_emojis[emoji_code]['ids'].append(post_id)
+                            titles_and_emojis[emoji_code]['sentiment'].append(sentiment.polarity_scores(title))
+                            titles_and_emojis['searched_posts']['found'] += 1
+                            titles_and_emojis['searched_subs'][subreddit] += 1
                     else:
                         titles_and_emojis[emoji_code] = {}
                         titles_and_emojis[emoji_code]['frequency'] = 1
                         titles_and_emojis[emoji_code]['subreddits'] = [subreddit]
-                        titles_and_emojis[emoji_code]['titles'] = [title]
+                        titles_and_emojis[emoji_code]['ids'] = [post_id]
                         titles_and_emojis[emoji_code]['sentiment'] = [sentiment.polarity_scores(title)]
-                found = True
+                        titles_and_emojis['searched_posts']['found'] += 1
+                        titles_and_emojis['searched_subs'][subreddit] += 1
+                #found = True
             last_request_time = time.time()
             if found:
                 break
