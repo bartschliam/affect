@@ -1,62 +1,70 @@
 {
   "searched_subs": {
-    "count": 40,
+    "count": 41,
     "cloudwater": 2,
-    "anime": 0,
-    "art": 0,
-    "aww": 20,
-    "beauty": 3,
-    "books": 0,
-    "bunnies": 13,
-    "business": 0,
-    "cars": 0,
-    "comics": 4,
-    "design": 3,
-    "education": 0,
-    "facepalm": 10,
-    "fashion": 2,
-    "finance": 0,
-    "fishing": 0,
-    "fitness": 0,
-    "food": 0,
-    "funny": 1,
-    "gaming": 2,
-    "gardening": 5,
+    "aww": 39,
+    "beauty": 5,
+    "bunnies": 15,
+    "comics": 6,
+    "design": 4,
+    "facepalm": 25,
+    "fashion": 6,
+    "funny": 3,
+    "gaming": 6,
+    "gardening": 15,
     "hiking": 1,
-    "history": 0,
-    "lgbt": 13,
-    "movies": 0,
-    "music": 5,
-    "news": 0,
-    "parenting": 0,
-    "pets": 0,
-    "philosophy": 0,
-    "photography": 0,
-    "politics": 0,
-    "relationships": 0,
-    "science": 0,
-    "skateboarding": 8,
+    "lgbt": 21,
+    "music": 7,
+    "skateboarding": 10,
     "snowboarding": 3,
-    "spirituality": 1,
-    "sports": 0,
-    "technology": 0,
-    "travel": 1
+    "spirituality": 4,
+    "travel": 4,
+    "emojipasta": 233
   },
-  "searched_posts": { "count": 3897, "found": 97 },
+  "searched_posts": { "count": 9200, "found": 409 },
   "\ud83d\ude80": {
-    "frequency": 1,
-    "subreddits": ["cloudwater"],
-    "ids": ["11kxsrk"],
+    "frequency": 2,
+    "subreddits": ["cloudwater", "emojipasta"],
+    "ids": ["11kxsrk", "11rthsh"],
     "sentiment": [
-      { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 }
+      { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 },
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
     ]
   },
   "\ud83d\ude02": {
-    "frequency": 1,
-    "subreddits": ["cloudwater"],
-    "ids": ["11kxsrk"],
+    "frequency": 9,
+    "subreddits": [
+      "cloudwater",
+      "facepalm",
+      "facepalm",
+      "facepalm",
+      "facepalm",
+      "funny",
+      "gardening",
+      "gardening",
+      "emojipasta"
+    ],
+    "ids": [
+      "11kxsrk",
+      "11x1de1",
+      "11x0lzk",
+      "11wwwa8",
+      "11wr438",
+      "11xe0gg",
+      "11xehc6",
+      "11x4ncb",
+      "10b143f"
+    ],
     "sentiment": [
-      { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 }
+      { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 },
+      { "neg": 0.139, "neu": 0.584, "pos": 0.277, "compound": 0.4404 },
+      { "neg": 0.305, "neu": 0.516, "pos": 0.178, "compound": -0.4019 },
+      { "neg": 0.139, "neu": 0.584, "pos": 0.277, "compound": 0.4404 },
+      { "neg": 0.16, "neu": 0.729, "pos": 0.111, "compound": -0.1779 },
+      { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 },
+      { "neg": 0.067, "neu": 0.632, "pos": 0.302, "compound": 0.7717 },
+      { "neg": 0.071, "neu": 0.632, "pos": 0.297, "compound": 0.7964 },
+      { "neg": 0.072, "neu": 0.644, "pos": 0.284, "compound": 0.765 }
     ]
   },
   "\ud83e\udd29": {
@@ -68,45 +76,73 @@
     ]
   },
   "\ud83e\udd70": {
-    "frequency": 5,
-    "subreddits": ["aww", "bunnies", "bunnies", "gardening", "lgbt"],
-    "ids": ["11wlnxs", "11w6v7s", "11ue61q", "11w8iqn", "11wdumc"],
+    "frequency": 7,
+    "subreddits": [
+      "aww",
+      "bunnies",
+      "bunnies",
+      "gardening",
+      "lgbt",
+      "gardening",
+      "emojipasta"
+    ],
+    "ids": [
+      "11wlnxs",
+      "11w6v7s",
+      "11ue61q",
+      "11w8iqn",
+      "11wdumc",
+      "11xa2zu",
+      "10rjxkl"
+    ],
     "sentiment": [
       { "neg": 0.0, "neu": 0.412, "pos": 0.588, "compound": 0.9714 },
       { "neg": 0.0, "neu": 0.416, "pos": 0.584, "compound": 0.7918 },
       { "neg": 0.0, "neu": 0.669, "pos": 0.331, "compound": 0.8856 },
       { "neg": 0.0, "neu": 0.664, "pos": 0.336, "compound": 0.8221 },
-      { "neg": 0.0, "neu": 0.791, "pos": 0.209, "compound": 0.7003 }
+      { "neg": 0.0, "neu": 0.791, "pos": 0.209, "compound": 0.7003 },
+      { "neg": 0.0, "neu": 0.466, "pos": 0.534, "compound": 0.9121 },
+      { "neg": 0.091, "neu": 0.565, "pos": 0.344, "compound": 0.8834 }
     ]
   },
   "\ud83d\ude0a": {
-    "frequency": 1,
-    "subreddits": ["aww"],
-    "ids": ["11wlnxs"],
+    "frequency": 2,
+    "subreddits": ["aww", "lgbt"],
+    "ids": ["11wlnxs", "11xawl1"],
     "sentiment": [
-      { "neg": 0.0, "neu": 0.412, "pos": 0.588, "compound": 0.9714 }
+      { "neg": 0.0, "neu": 0.412, "pos": 0.588, "compound": 0.9714 },
+      { "neg": 0.0, "neu": 0.525, "pos": 0.475, "compound": 0.9524 }
     ]
   },
   "\ud83d\ude0d": {
-    "frequency": 2,
-    "subreddits": ["aww", "bunnies"],
-    "ids": ["11wlnxs", "11q211j"],
+    "frequency": 5,
+    "subreddits": ["aww", "bunnies", "emojipasta", "gardening", "lgbt"],
+    "ids": ["11wlnxs", "11q211j", "10ehr49", "11wqsva", "11wsi47"],
     "sentiment": [
       { "neg": 0.0, "neu": 0.412, "pos": 0.588, "compound": 0.9714 },
-      { "neg": 0.0, "neu": 0.603, "pos": 0.397, "compound": 0.8481 }
+      { "neg": 0.0, "neu": 0.603, "pos": 0.397, "compound": 0.8481 },
+      { "neg": 0.0, "neu": 0.587, "pos": 0.413, "compound": 0.8283 },
+      { "neg": 0.0, "neu": 0.591, "pos": 0.409, "compound": 0.8852 },
+      { "neg": 0.0, "neu": 0.455, "pos": 0.545, "compound": 0.802 }
     ]
   },
   "\ud83d\ude42": {
-    "frequency": 1,
-    "subreddits": ["aww"],
-    "ids": ["11wksvg"],
-    "sentiment": [{ "neg": 0.0, "neu": 0.413, "pos": 0.587, "compound": 0.819 }]
+    "frequency": 2,
+    "subreddits": ["aww", "gardening"],
+    "ids": ["11wksvg", "11xa2zu"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.413, "pos": 0.587, "compound": 0.819 },
+      { "neg": 0.0, "neu": 0.466, "pos": 0.534, "compound": 0.9121 }
+    ]
   },
   "\ud83e\udd17": {
-    "frequency": 1,
-    "subreddits": ["aww"],
-    "ids": ["11wksvg"],
-    "sentiment": [{ "neg": 0.0, "neu": 0.413, "pos": 0.587, "compound": 0.819 }]
+    "frequency": 2,
+    "subreddits": ["aww", "emojipasta"],
+    "ids": ["11wksvg", "108r9p8"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.413, "pos": 0.587, "compound": 0.819 },
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
   },
   "\u2728": {
     "frequency": 2,
@@ -118,7 +154,7 @@
     ]
   },
   "\u2764": {
-    "frequency": 8,
+    "frequency": 14,
     "subreddits": [
       "aww",
       "aww",
@@ -127,7 +163,13 @@
       "lgbt",
       "music",
       "skateboarding",
-      "travel"
+      "travel",
+      "aww",
+      "bunnies",
+      "fashion",
+      "lgbt",
+      "emojipasta",
+      "aww"
     ],
     "ids": [
       "11wk7v7",
@@ -137,7 +179,13 @@
       "11wg986",
       "11wm4z0",
       "11vh26o",
-      "11vyfn8"
+      "11vyfn8",
+      "11xh16z",
+      "11x0afb",
+      "11x7a8z",
+      "11x1qzy",
+      "11qwssb",
+      "11x0wrn"
     ],
     "sentiment": [
       { "neg": 0.0, "neu": 0.8, "pos": 0.2, "compound": 0.4588 },
@@ -147,15 +195,22 @@
       { "neg": 0.0, "neu": 0.593, "pos": 0.407, "compound": 0.6697 },
       { "neg": 0.0, "neu": 0.63, "pos": 0.37, "compound": 0.9734 },
       { "neg": 0.306, "neu": 0.694, "pos": 0.0, "compound": -0.296 },
-      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 0.663, "pos": 0.337, "compound": 0.6808 },
+      { "neg": 0.084, "neu": 0.72, "pos": 0.196, "compound": 0.69 },
+      { "neg": 0.0, "neu": 0.794, "pos": 0.206, "compound": 0.0772 },
+      { "neg": 0.306, "neu": 0.694, "pos": 0.0, "compound": -0.765 },
+      { "neg": 0.315, "neu": 0.51, "pos": 0.175, "compound": -0.6488 },
+      { "neg": 0.0, "neu": 0.506, "pos": 0.494, "compound": 0.7783 }
     ]
   },
   "\ud83c\udf81": {
-    "frequency": 1,
-    "subreddits": ["aww"],
-    "ids": ["11wk02a"],
+    "frequency": 2,
+    "subreddits": ["aww", "emojipasta"],
+    "ids": ["11wk02a", "11rthsh"],
     "sentiment": [
-      { "neg": 0.0, "neu": 0.452, "pos": 0.548, "compound": 0.8658 }
+      { "neg": 0.0, "neu": 0.452, "pos": 0.548, "compound": 0.8658 },
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
     ]
   },
   "\ud83c\udf89": {
@@ -165,16 +220,22 @@
     "sentiment": [{ "neg": 0.0, "neu": 0.77, "pos": 0.23, "compound": 0.4574 }]
   },
   "\ud83c\udf82": {
-    "frequency": 1,
-    "subreddits": ["aww"],
-    "ids": ["11wjb1b"],
-    "sentiment": [{ "neg": 0.0, "neu": 0.77, "pos": 0.23, "compound": 0.4574 }]
+    "frequency": 2,
+    "subreddits": ["aww", "emojipasta"],
+    "ids": ["11wjb1b", "10ehr49"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.77, "pos": 0.23, "compound": 0.4574 },
+      { "neg": 0.0, "neu": 0.587, "pos": 0.413, "compound": 0.8283 }
+    ]
   },
   "\ud83e\udd7a": {
-    "frequency": 1,
-    "subreddits": ["aww"],
-    "ids": ["11whzf7"],
-    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+    "frequency": 2,
+    "subreddits": ["aww", "emojipasta"],
+    "ids": ["11whzf7", "11lp1xd"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
   },
   "\ud83e\udd0d": {
     "frequency": 2,
@@ -186,12 +247,15 @@
     ]
   },
   "\u2665": {
-    "frequency": 2,
-    "subreddits": ["aww", "lgbt"],
-    "ids": ["11wfuhg", "11w7tky"],
+    "frequency": 5,
+    "subreddits": ["aww", "lgbt", "aww", "aww", "emojipasta"],
+    "ids": ["11wfuhg", "11w7tky", "11x5r0f", "11xhp64", "11qwssb"],
     "sentiment": [
       { "neg": 0.0, "neu": 0.51, "pos": 0.49, "compound": 0.8271 },
-      { "neg": 0.0, "neu": 0.171, "pos": 0.829, "compound": 0.8658 }
+      { "neg": 0.0, "neu": 0.171, "pos": 0.829, "compound": 0.8658 },
+      { "neg": 0.0, "neu": 0.588, "pos": 0.412, "compound": 0.6369 },
+      { "neg": 0.0, "neu": 0.824, "pos": 0.176, "compound": 0.6696 },
+      { "neg": 0.315, "neu": 0.51, "pos": 0.175, "compound": -0.6488 }
     ]
   },
   "\ud83d\udc2e": {
@@ -207,76 +271,92 @@
     "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
   },
   "\ud83d\ude34": {
-    "frequency": 2,
-    "subreddits": ["aww", "bunnies"],
-    "ids": ["11wcu6m", "11tu4bk"],
+    "frequency": 3,
+    "subreddits": ["aww", "bunnies", "emojipasta"],
+    "ids": ["11wcu6m", "11tu4bk", "11lp1xd"],
     "sentiment": [
       { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
-      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
     ]
   },
   "\ud83d\udc36": {
-    "frequency": 1,
-    "subreddits": ["aww"],
-    "ids": ["11wcaz3"],
-    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+    "frequency": 2,
+    "subreddits": ["aww", "aww"],
+    "ids": ["11wcaz3", "11xgkzg"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 0.812, "pos": 0.188, "compound": 0.4588 }
+    ]
   },
   "\ud83d\ude05": {
-    "frequency": 2,
-    "subreddits": ["beauty", "lgbt"],
-    "ids": ["11vz18o", "11wexf9"],
+    "frequency": 3,
+    "subreddits": ["beauty", "lgbt", "lgbt"],
+    "ids": ["11vz18o", "11wexf9", "11x8f19"],
     "sentiment": [
       { "neg": 0.0, "neu": 0.667, "pos": 0.333, "compound": 0.3612 },
-      { "neg": 0.0, "neu": 0.654, "pos": 0.346, "compound": 0.6476 }
+      { "neg": 0.0, "neu": 0.654, "pos": 0.346, "compound": 0.6476 },
+      { "neg": 0.0, "neu": 0.444, "pos": 0.556, "compound": 0.9153 }
     ]
   },
   "\ud83d\udc40": {
-    "frequency": 1,
-    "subreddits": ["beauty"],
-    "ids": ["11vf1q5"],
+    "frequency": 2,
+    "subreddits": ["beauty", "aww"],
+    "ids": ["11vf1q5", "11wse6w"],
     "sentiment": [
-      { "neg": 0.0, "neu": 0.385, "pos": 0.615, "compound": 0.4939 }
+      { "neg": 0.0, "neu": 0.385, "pos": 0.615, "compound": 0.4939 },
+      { "neg": 0.0, "neu": 0.794, "pos": 0.206, "compound": 0.0772 }
     ]
   },
   "\ud83d\udc85": {
-    "frequency": 1,
-    "subreddits": ["beauty"],
-    "ids": ["11um83u"],
+    "frequency": 2,
+    "subreddits": ["beauty", "emojipasta"],
+    "ids": ["11um83u", "108r9p8"],
     "sentiment": [
-      { "neg": 0.0, "neu": 0.776, "pos": 0.224, "compound": 0.3818 }
+      { "neg": 0.0, "neu": 0.776, "pos": 0.224, "compound": 0.3818 },
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
     ]
   },
   "\ud83d\ude2d": {
-    "frequency": 2,
-    "subreddits": ["bunnies", "facepalm"],
-    "ids": ["11w3285", "11werpx"],
+    "frequency": 5,
+    "subreddits": ["bunnies", "facepalm", "music", "emojipasta", "emojipasta"],
+    "ids": ["11w3285", "11werpx", "11x8wvx", "11nvgr7", "11mmvh5"],
     "sentiment": [
       { "neg": 0.108, "neu": 0.625, "pos": 0.267, "compound": 0.8225 },
-      { "neg": 0.205, "neu": 0.795, "pos": 0.0, "compound": -0.4767 }
+      { "neg": 0.205, "neu": 0.795, "pos": 0.0, "compound": -0.4767 },
+      { "neg": 0.256, "neu": 0.331, "pos": 0.413, "compound": 0.2263 },
+      { "neg": 0.242, "neu": 0.469, "pos": 0.289, "compound": 0.1531 },
+      { "neg": 0.217, "neu": 0.699, "pos": 0.084, "compound": -0.4404 }
     ]
   },
   "\ud83d\ude14": {
-    "frequency": 1,
-    "subreddits": ["bunnies"],
-    "ids": ["11vsnkr"],
+    "frequency": 2,
+    "subreddits": ["bunnies", "lgbt"],
+    "ids": ["11vsnkr", "11wwhoa"],
     "sentiment": [
-      { "neg": 0.245, "neu": 0.675, "pos": 0.08, "compound": -0.5707 }
+      { "neg": 0.245, "neu": 0.675, "pos": 0.08, "compound": -0.5707 },
+      { "neg": 0.0, "neu": 0.609, "pos": 0.391, "compound": 0.7233 }
     ]
   },
   "\ud83c\udf40": {
-    "frequency": 1,
-    "subreddits": ["bunnies"],
-    "ids": ["11u74r5"],
+    "frequency": 3,
+    "subreddits": ["bunnies", "emojipasta", "emojipasta"],
+    "ids": ["11u74r5", "11t996f", "11s6pvx"],
     "sentiment": [
-      { "neg": 0.0, "neu": 0.684, "pos": 0.316, "compound": 0.5719 }
+      { "neg": 0.0, "neu": 0.684, "pos": 0.316, "compound": 0.5719 },
+      { "neg": 0.149, "neu": 0.437, "pos": 0.414, "compound": 0.7845 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
     ]
   },
   "\ud83d\udda4": {
-    "frequency": 1,
-    "subreddits": ["bunnies"],
-    "ids": ["11u1397"],
+    "frequency": 4,
+    "subreddits": ["bunnies", "fashion", "aww", "aww"],
+    "ids": ["11u1397", "11xhapj", "11x3svj", "11x2cq0"],
     "sentiment": [
-      { "neg": 0.0, "neu": 0.462, "pos": 0.538, "compound": 0.7906 }
+      { "neg": 0.0, "neu": 0.462, "pos": 0.538, "compound": 0.7906 },
+      { "neg": 0.0, "neu": 0.819, "pos": 0.181, "compound": 0.6369 },
+      { "neg": 0.0, "neu": 0.588, "pos": 0.412, "compound": 0.6369 },
+      { "neg": 0.0, "neu": 0.469, "pos": 0.531, "compound": 0.8807 }
     ]
   },
   "\ud83c\udf5e": {
@@ -294,13 +374,15 @@
     ]
   },
   "\ud83d\udc95": {
-    "frequency": 3,
-    "subreddits": ["bunnies", "lgbt", "lgbt"],
-    "ids": ["11rjifb", "11wmeak", "11w6coi"],
+    "frequency": 5,
+    "subreddits": ["bunnies", "lgbt", "lgbt", "emojipasta", "emojipasta"],
+    "ids": ["11rjifb", "11wmeak", "11w6coi", "11lp1xd", "111xwi4"],
     "sentiment": [
       { "neg": 0.0, "neu": 0.538, "pos": 0.462, "compound": 0.6486 },
       { "neg": 0.0, "neu": 0.229, "pos": 0.771, "compound": 0.8779 },
-      { "neg": 0.254, "neu": 0.435, "pos": 0.312, "compound": 0.2023 }
+      { "neg": 0.254, "neu": 0.435, "pos": 0.312, "compound": 0.2023 },
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 },
+      { "neg": 0.0, "neu": 0.338, "pos": 0.662, "compound": 0.9559 }
     ]
   },
   "\ud83d\ude01": {
@@ -312,10 +394,13 @@
     ]
   },
   "\ud83e\udd16": {
-    "frequency": 1,
-    "subreddits": ["comics"],
-    "ids": ["11wk7rk"],
-    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+    "frequency": 2,
+    "subreddits": ["comics", "emojipasta"],
+    "ids": ["11wk7rk", "11l4ne0"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
   },
   "\ud83e\uddf3": {
     "frequency": 1,
@@ -338,12 +423,13 @@
     "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
   },
   "\ud83e\udd13": {
-    "frequency": 2,
-    "subreddits": ["design", "design"],
-    "ids": ["11ve63m", "11tlg2u"],
+    "frequency": 3,
+    "subreddits": ["design", "design", "emojipasta"],
+    "ids": ["11ve63m", "11tlg2u", "108r9p8"],
     "sentiment": [
       { "neg": 0.164, "neu": 0.672, "pos": 0.164, "compound": 0.0 },
-      { "neg": 0.084, "neu": 0.916, "pos": 0.0, "compound": -0.296 }
+      { "neg": 0.084, "neu": 0.916, "pos": 0.0, "compound": -0.296 },
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
     ]
   },
   "\ud83d\udc4d": {
@@ -365,40 +451,55 @@
     ]
   },
   "\ud83e\udd26": {
-    "frequency": 2,
-    "subreddits": ["facepalm", "facepalm"],
-    "ids": ["11wlsti", "11vy12s"],
+    "frequency": 4,
+    "subreddits": ["facepalm", "facepalm", "facepalm", "facepalm"],
+    "ids": ["11wlsti", "11vy12s", "11wt42m", "11wr438"],
     "sentiment": [
       { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
-      { "neg": 0.219, "neu": 0.736, "pos": 0.045, "compound": -0.755 }
+      { "neg": 0.219, "neu": 0.736, "pos": 0.045, "compound": -0.755 },
+      { "neg": 0.231, "neu": 0.769, "pos": 0.0, "compound": -0.25 },
+      { "neg": 0.16, "neu": 0.729, "pos": 0.111, "compound": -0.1779 }
     ]
   },
   "\ud83d\udc80": {
-    "frequency": 3,
-    "subreddits": ["facepalm", "funny", "gaming"],
-    "ids": ["11werpx", "11vzpdg", "11we68g"],
+    "frequency": 4,
+    "subreddits": ["facepalm", "funny", "gaming", "facepalm"],
+    "ids": ["11werpx", "11vzpdg", "11we68g", "11wprhy"],
     "sentiment": [
       { "neg": 0.205, "neu": 0.795, "pos": 0.0, "compound": -0.4767 },
       { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
-      { "neg": 0.345, "neu": 0.507, "pos": 0.148, "compound": -0.5984 }
+      { "neg": 0.345, "neu": 0.507, "pos": 0.148, "compound": -0.5984 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
     ]
   },
   "\ud83d\ude22": {
-    "frequency": 1,
-    "subreddits": ["facepalm"],
-    "ids": ["11wbz1s"],
+    "frequency": 3,
+    "subreddits": ["facepalm", "emojipasta", "emojipasta"],
+    "ids": ["11wbz1s", "114jn9d", "108r9p8"],
     "sentiment": [
-      { "neg": 0.333, "neu": 0.215, "pos": 0.452, "compound": 0.2732 }
+      { "neg": 0.333, "neu": 0.215, "pos": 0.452, "compound": 0.2732 },
+      { "neg": 0.508, "neu": 0.492, "pos": 0.0, "compound": -0.4767 },
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
     ]
   },
   "\ud83e\udd14": {
-    "frequency": 3,
-    "subreddits": ["facepalm", "lgbt", "lgbt"],
-    "ids": ["11w6i5q", "11wlf5p", "11wc0s5"],
+    "frequency": 6,
+    "subreddits": [
+      "facepalm",
+      "lgbt",
+      "lgbt",
+      "facepalm",
+      "emojipasta",
+      "gardening"
+    ],
+    "ids": ["11w6i5q", "11wlf5p", "11wc0s5", "11wr438", "11lbhsp", "11wzar4"],
     "sentiment": [
       { "neg": 0.059, "neu": 0.941, "pos": 0.0, "compound": -0.0516 },
       { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
-      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.16, "neu": 0.729, "pos": 0.111, "compound": -0.1779 },
+      { "neg": 0.08, "neu": 0.798, "pos": 0.122, "compound": 0.2732 },
+      { "neg": 0.0, "neu": 0.777, "pos": 0.223, "compound": 0.3182 }
     ]
   },
   "\ud83d\udcad": {
@@ -410,11 +511,39 @@
     ]
   },
   "\u2642": {
-    "frequency": 1,
-    "subreddits": ["facepalm"],
-    "ids": ["11vy12s"],
+    "frequency": 9,
+    "subreddits": [
+      "facepalm",
+      "facepalm",
+      "facepalm",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta"
+    ],
+    "ids": [
+      "11vy12s",
+      "11wt42m",
+      "11wr438",
+      "11mmvh5",
+      "118rrld",
+      "10trtwu",
+      "10rjxkl",
+      "10pj9ne",
+      "10knw0k"
+    ],
     "sentiment": [
-      { "neg": 0.219, "neu": 0.736, "pos": 0.045, "compound": -0.755 }
+      { "neg": 0.219, "neu": 0.736, "pos": 0.045, "compound": -0.755 },
+      { "neg": 0.231, "neu": 0.769, "pos": 0.0, "compound": -0.25 },
+      { "neg": 0.16, "neu": 0.729, "pos": 0.111, "compound": -0.1779 },
+      { "neg": 0.217, "neu": 0.699, "pos": 0.084, "compound": -0.4404 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.091, "neu": 0.565, "pos": 0.344, "compound": 0.8834 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.179, "neu": 0.821, "pos": 0.0, "compound": -0.34 }
     ]
   },
   "\ud83e\udd18": {
@@ -426,16 +555,24 @@
     ]
   },
   "\ud83d\udd25": {
-    "frequency": 1,
-    "subreddits": ["gaming"],
-    "ids": ["11w2pkf"],
-    "sentiment": [{ "neg": 0.286, "neu": 0.714, "pos": 0.0, "compound": -0.34 }]
+    "frequency": 4,
+    "subreddits": ["gaming", "music", "emojipasta", "emojipasta"],
+    "ids": ["11w2pkf", "11xlctw", "11lp1xd", "10knw0k"],
+    "sentiment": [
+      { "neg": 0.286, "neu": 0.714, "pos": 0.0, "compound": -0.34 },
+      { "neg": 0.115, "neu": 0.673, "pos": 0.211, "compound": 0.4574 },
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 },
+      { "neg": 0.179, "neu": 0.821, "pos": 0.0, "compound": -0.34 }
+    ]
   },
   "\ud83c\udf3a": {
-    "frequency": 1,
-    "subreddits": ["gardening"],
-    "ids": ["11wi1ul"],
-    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+    "frequency": 2,
+    "subreddits": ["gardening", "emojipasta"],
+    "ids": ["11wi1ul", "11rthsh"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
   },
   "\ud83d\udc9a": {
     "frequency": 1,
@@ -444,16 +581,24 @@
     "sentiment": [{ "neg": 0.0, "neu": 0.22, "pos": 0.78, "compound": 0.7964 }]
   },
   "\ud83c\udf3c": {
-    "frequency": 1,
-    "subreddits": ["gardening"],
-    "ids": ["11w8n9b"],
-    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+    "frequency": 2,
+    "subreddits": ["gardening", "emojipasta"],
+    "ids": ["11w8n9b", "11rthsh"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
   },
   "\ud83d\ude4f": {
-    "frequency": 1,
-    "subreddits": ["gardening"],
-    "ids": ["11w3n14"],
-    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+    "frequency": 4,
+    "subreddits": ["gardening", "spirituality", "emojipasta", "emojipasta"],
+    "ids": ["11w3n14", "11x5pf5", "11mmvh5", "1157g50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 0.595, "pos": 0.405, "compound": 0.8176 },
+      { "neg": 0.217, "neu": 0.699, "pos": 0.084, "compound": -0.4404 },
+      { "neg": 0.0, "neu": 0.767, "pos": 0.233, "compound": 0.4648 }
+    ]
   },
   "\u26f0": {
     "frequency": 1,
@@ -550,19 +695,21 @@
     "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
   },
   "\u270c": {
-    "frequency": 1,
-    "subreddits": ["skateboarding"],
-    "ids": ["11s34k1"],
+    "frequency": 2,
+    "subreddits": ["skateboarding", "travel"],
+    "ids": ["11s34k1", "11x8bzb"],
     "sentiment": [
-      { "neg": 0.108, "neu": 0.36, "pos": 0.532, "compound": 0.6908 }
+      { "neg": 0.108, "neu": 0.36, "pos": 0.532, "compound": 0.6908 },
+      { "neg": 0.0, "neu": 0.59, "pos": 0.41, "compound": 0.9042 }
     ]
   },
   "\ud83c\udffc": {
-    "frequency": 1,
-    "subreddits": ["skateboarding"],
-    "ids": ["11s34k1"],
+    "frequency": 2,
+    "subreddits": ["skateboarding", "emojipasta"],
+    "ids": ["11s34k1", "10trtwu"],
     "sentiment": [
-      { "neg": 0.108, "neu": 0.36, "pos": 0.532, "compound": 0.6908 }
+      { "neg": 0.108, "neu": 0.36, "pos": 0.532, "compound": 0.6908 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
     ]
   },
   "\ud83e\udd1d": {
@@ -580,11 +727,1481 @@
     "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
   },
   "\ud83e\udd79": {
-    "frequency": 1,
-    "subreddits": ["snowboarding"],
-    "ids": ["11saw3y"],
+    "frequency": 2,
+    "subreddits": ["snowboarding", "travel"],
+    "ids": ["11saw3y", "11x8bzb"],
     "sentiment": [
-      { "neg": 0.162, "neu": 0.645, "pos": 0.193, "compound": 0.1134 }
+      { "neg": 0.162, "neu": 0.645, "pos": 0.193, "compound": 0.1134 },
+      { "neg": 0.0, "neu": 0.59, "pos": 0.41, "compound": 0.9042 }
+    ]
+  },
+  "\ud83d\udc96": {
+    "frequency": 3,
+    "subreddits": ["aww", "beauty", "emojipasta"],
+    "ids": ["11xgr1m", "11x5amb", "111xwi4"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.701, "pos": 0.299, "compound": 0.7506 },
+      { "neg": 0.067, "neu": 0.561, "pos": 0.372, "compound": 0.8653 },
+      { "neg": 0.0, "neu": 0.338, "pos": 0.662, "compound": 0.9559 }
+    ]
+  },
+  "\u2601": {
+    "frequency": 1,
+    "subreddits": ["aww"],
+    "ids": ["11xg3bi"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.762, "pos": 0.238, "compound": 0.3612 }
+    ]
+  },
+  "\u2b50": {
+    "frequency": 3,
+    "subreddits": ["aww", "fashion", "emojipasta"],
+    "ids": ["11xg3bi", "11xhapj", "10rjxkl"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.762, "pos": 0.238, "compound": 0.3612 },
+      { "neg": 0.0, "neu": 0.819, "pos": 0.181, "compound": 0.6369 },
+      { "neg": 0.091, "neu": 0.565, "pos": 0.344, "compound": 0.8834 }
+    ]
+  },
+  "\ud83d\ude44": {
+    "frequency": 3,
+    "subreddits": ["aww", "facepalm", "funny"],
+    "ids": ["11xccf6", "11x3m3k", "11x3gd0"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\u2668": {
+    "frequency": 1,
+    "subreddits": ["aww"],
+    "ids": ["11xc2wc"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\udd0a": {
+    "frequency": 1,
+    "subreddits": ["aww"],
+    "ids": ["11x95f3"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.759, "pos": 0.241, "compound": 0.5859 }
+    ]
+  },
+  "\ud83d\udc99": {
+    "frequency": 1,
+    "subreddits": ["bunnies"],
+    "ids": ["11x0afb"],
+    "sentiment": [{ "neg": 0.084, "neu": 0.72, "pos": 0.196, "compound": 0.69 }]
+  },
+  "\ud83d\udc84": {
+    "frequency": 2,
+    "subreddits": ["comics", "lgbt"],
+    "ids": ["11x049s", "11wwhoa"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 0.609, "pos": 0.391, "compound": 0.7233 }
+    ]
+  },
+  "\ud83c\udf4e": {
+    "frequency": 1,
+    "subreddits": ["design"],
+    "ids": ["11xd3cp"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\udd28": {
+    "frequency": 2,
+    "subreddits": ["facepalm", "emojipasta"],
+    "ids": ["11xgyji", "108r9p8"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
+  },
+  "\u2122": {
+    "frequency": 1,
+    "subreddits": ["facepalm"],
+    "ids": ["11xfnrm"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.658, "pos": 0.342, "compound": 0.3818 }
+    ]
+  },
+  "\ud83d\ude33": {
+    "frequency": 3,
+    "subreddits": ["facepalm", "emojipasta", "emojipasta"],
+    "ids": ["11wto6j", "11rthsh", "10z6bgj"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 },
+      { "neg": 0.308, "neu": 0.692, "pos": 0.0, "compound": -0.4588 }
+    ]
+  },
+  "\ud83d\udca5": {
+    "frequency": 3,
+    "subreddits": ["gaming", "emojipasta", "lgbt"],
+    "ids": ["11wu7jc", "11lp1xd", "11wy8rh"],
+    "sentiment": [
+      { "neg": 0.194, "neu": 0.806, "pos": 0.0, "compound": -0.6467 },
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 },
+      { "neg": 0.909, "neu": 0.091, "pos": 0.0, "compound": -0.8402 }
+    ]
+  },
+  "\u2694": {
+    "frequency": 1,
+    "subreddits": ["gaming"],
+    "ids": ["11wu7jc"],
+    "sentiment": [
+      { "neg": 0.194, "neu": 0.806, "pos": 0.0, "compound": -0.6467 }
+    ]
+  },
+  "\ud83c\udfae": {
+    "frequency": 1,
+    "subreddits": ["gaming"],
+    "ids": ["11wu7jc"],
+    "sentiment": [
+      { "neg": 0.194, "neu": 0.806, "pos": 0.0, "compound": -0.6467 }
+    ]
+  },
+  "\u263a": {
+    "frequency": 1,
+    "subreddits": ["gardening"],
+    "ids": ["11xevd1"],
+    "sentiment": [{ "neg": 0.0, "neu": 0.5, "pos": 0.5, "compound": 0.4588 }]
+  },
+  "\ud83d\udeeb": {
+    "frequency": 1,
+    "subreddits": ["skateboarding"],
+    "ids": ["11wt3em"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\ude82": {
+    "frequency": 1,
+    "subreddits": ["skateboarding"],
+    "ids": ["11wt3em"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\u2763": {
+    "frequency": 1,
+    "subreddits": ["spirituality"],
+    "ids": ["11x5pf5"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.595, "pos": 0.405, "compound": 0.8176 }
+    ]
+  },
+  "\ud83c\udf31": {
+    "frequency": 1,
+    "subreddits": ["spirituality"],
+    "ids": ["11wwr0j"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83c\udffe": {
+    "frequency": 2,
+    "subreddits": ["travel", "emojipasta"],
+    "ids": ["11x8bzb", "10trtwu"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.59, "pos": 0.41, "compound": 0.9042 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83d\ude43": {
+    "frequency": 1,
+    "subreddits": ["aww"],
+    "ids": ["11xl7kn"],
+    "sentiment": [
+      { "neg": 0.143, "neu": 0.681, "pos": 0.176, "compound": 0.2263 }
+    ]
+  },
+  "\ud83d\udc10": {
+    "frequency": 1,
+    "subreddits": ["aww"],
+    "ids": ["11xl004"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\ude3b": {
+    "frequency": 1,
+    "subreddits": ["aww"],
+    "ids": ["11xkmxi"],
+    "sentiment": [{ "neg": 0.0, "neu": 0.75, "pos": 0.25, "compound": 0.4588 }]
+  },
+  "\ud83c\udfb6": {
+    "frequency": 2,
+    "subreddits": ["aww", "emojipasta"],
+    "ids": ["11xkljf", "10h2ga3"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.551, "pos": 0.449, "compound": 0.8455 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83e\udda2": {
+    "frequency": 1,
+    "subreddits": ["aww"],
+    "ids": ["11xiz90"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\ude13": {
+    "frequency": 1,
+    "subreddits": ["beauty"],
+    "ids": ["11xj14y"],
+    "sentiment": [
+      { "neg": 0.237, "neu": 0.508, "pos": 0.254, "compound": 0.0516 }
+    ]
+  },
+  "\u2693": {
+    "frequency": 1,
+    "subreddits": ["comics"],
+    "ids": ["11xjkya"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\udd2b": {
+    "frequency": 1,
+    "subreddits": ["fashion"],
+    "ids": ["11xlgx7"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\u2620": {
+    "frequency": 1,
+    "subreddits": ["gaming"],
+    "ids": ["11xk9c5"],
+    "sentiment": [
+      { "neg": 0.203, "neu": 0.797, "pos": 0.0, "compound": -0.5565 }
+    ]
+  },
+  "\ud83c\udf38": {
+    "frequency": 2,
+    "subreddits": ["gardening", "emojipasta"],
+    "ids": ["11xkblb", "11rthsh"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.448, "pos": 0.552, "compound": 0.5719 },
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf54": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["11vh14n", "10knw0k"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.179, "neu": 0.821, "pos": 0.0, "compound": -0.34 }
+    ]
+  },
+  "\ud83c\udf5f": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11vh14n"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\udd64": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11vh14n"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\u274c": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["11vh14n", "11lbhsp"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.08, "neu": 0.798, "pos": 0.122, "compound": 0.2732 }
+    ]
+  },
+  "\ud83e\ude7a": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11txy0m"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\udd7c": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11txy0m"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\ude7b": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11txy0m"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\u2618": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["11tuivj", "11ts707"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 0.619, "pos": 0.381, "compound": 0.5719 }
+    ]
+  },
+  "\ud83d\ude0f": {
+    "frequency": 3,
+    "subreddits": ["emojipasta", "emojipasta", "emojipasta"],
+    "ids": ["11tuivj", "11qwssb", "11enfub"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.315, "neu": 0.51, "pos": 0.175, "compound": -0.6488 },
+      { "neg": 0.238, "neu": 0.762, "pos": 0.0, "compound": -0.8286 }
+    ]
+  },
+  "\ud83c\udf51": {
+    "frequency": 3,
+    "subreddits": ["emojipasta", "emojipasta", "emojipasta"],
+    "ids": ["11tuivj", "10v57fn", "10muwl9"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.202, "neu": 0.798, "pos": 0.0, "compound": -0.6486 },
+      { "neg": 0.206, "neu": 0.794, "pos": 0.0, "compound": -0.3818 }
+    ]
+  },
+  "\ud83d\ude00": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["11t996f", "10rjxkl"],
+    "sentiment": [
+      { "neg": 0.149, "neu": 0.437, "pos": 0.414, "compound": 0.7845 },
+      { "neg": 0.091, "neu": 0.565, "pos": 0.344, "compound": 0.8834 }
+    ]
+  },
+  "\ud83d\udc4c": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11t996f"],
+    "sentiment": [
+      { "neg": 0.149, "neu": 0.437, "pos": 0.414, "compound": 0.7845 }
+    ]
+  },
+  "\ud83c\udf46": {
+    "frequency": 7,
+    "subreddits": [
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta"
+    ],
+    "ids": [
+      "11t996f",
+      "11smlrv",
+      "11rthsh",
+      "11lbhsp",
+      "11enfub",
+      "10muwl9",
+      "10ehr49"
+    ],
+    "sentiment": [
+      { "neg": 0.149, "neu": 0.437, "pos": 0.414, "compound": 0.7845 },
+      { "neg": 0.417, "neu": 0.583, "pos": 0.0, "compound": -0.6124 },
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 },
+      { "neg": 0.08, "neu": 0.798, "pos": 0.122, "compound": 0.2732 },
+      { "neg": 0.238, "neu": 0.762, "pos": 0.0, "compound": -0.8286 },
+      { "neg": 0.206, "neu": 0.794, "pos": 0.0, "compound": -0.3818 },
+      { "neg": 0.0, "neu": 0.587, "pos": 0.413, "compound": 0.8283 }
+    ]
+  },
+  "\ud83d\udca6": {
+    "frequency": 7,
+    "subreddits": [
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta",
+      "emojipasta"
+    ],
+    "ids": [
+      "11t996f",
+      "11smlrv",
+      "11r5f5t",
+      "11enfub",
+      "119hecz",
+      "10muwl9",
+      "10ehr49"
+    ],
+    "sentiment": [
+      { "neg": 0.149, "neu": 0.437, "pos": 0.414, "compound": 0.7845 },
+      { "neg": 0.417, "neu": 0.583, "pos": 0.0, "compound": -0.6124 },
+      { "neg": 0.0, "neu": 0.748, "pos": 0.252, "compound": 0.5719 },
+      { "neg": 0.238, "neu": 0.762, "pos": 0.0, "compound": -0.8286 },
+      { "neg": 0.0, "neu": 0.859, "pos": 0.141, "compound": 0.3818 },
+      { "neg": 0.206, "neu": 0.794, "pos": 0.0, "compound": -0.3818 },
+      { "neg": 0.0, "neu": 0.587, "pos": 0.413, "compound": 0.8283 }
+    ]
+  },
+  "\ud83d\ude29": {
+    "frequency": 3,
+    "subreddits": ["emojipasta", "emojipasta", "emojipasta"],
+    "ids": ["11smlrv", "11lbhsp", "11enfub"],
+    "sentiment": [
+      { "neg": 0.417, "neu": 0.583, "pos": 0.0, "compound": -0.6124 },
+      { "neg": 0.08, "neu": 0.798, "pos": 0.122, "compound": 0.2732 },
+      { "neg": 0.238, "neu": 0.762, "pos": 0.0, "compound": -0.8286 }
+    ]
+  },
+  "\ud83c\udfc0": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["11smlrv", "10vlcze"],
+    "sentiment": [
+      { "neg": 0.417, "neu": 0.583, "pos": 0.0, "compound": -0.6124 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83d\uddd1": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11smlrv"],
+    "sentiment": [
+      { "neg": 0.417, "neu": 0.583, "pos": 0.0, "compound": -0.6124 }
+    ]
+  },
+  "\ud83e\udd2a": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83d\ude35": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf20": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf87": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf0c": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83d\udef8": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83d\udef0": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83d\udccd": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udfaf": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83d\udccc": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83d\uded2": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["11rthsh", "118rrld"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83d\udecd": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["11rthsh", "118rrld"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83e\udd66": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf45": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udfea": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udfec": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udfe6": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf34": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf1e": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf0a": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf06": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf03": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf07": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf09": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83c\udf01": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83d\udcc6": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83d\uddd3": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83d\udcc5": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11rthsh"],
+    "sentiment": [
+      { "neg": 0.025, "neu": 0.937, "pos": 0.038, "compound": 0.25 }
+    ]
+  },
+  "\ud83e\udd67": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11r5f5t"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.748, "pos": 0.252, "compound": 0.5719 }
+    ]
+  },
+  "\ud83d\ude45": {
+    "frequency": 4,
+    "subreddits": ["emojipasta", "emojipasta", "emojipasta", "emojipasta"],
+    "ids": ["11qwssb", "11mmvh5", "11lp1xd", "10rjxkl"],
+    "sentiment": [
+      { "neg": 0.315, "neu": 0.51, "pos": 0.175, "compound": -0.6488 },
+      { "neg": 0.217, "neu": 0.699, "pos": 0.084, "compound": -0.4404 },
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 },
+      { "neg": 0.091, "neu": 0.565, "pos": 0.344, "compound": 0.8834 }
+    ]
+  },
+  "\ud83d\udcd4": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11qwssb"],
+    "sentiment": [
+      { "neg": 0.315, "neu": 0.51, "pos": 0.175, "compound": -0.6488 }
+    ]
+  },
+  "\ud83d\udcda": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11qwssb"],
+    "sentiment": [
+      { "neg": 0.315, "neu": 0.51, "pos": 0.175, "compound": -0.6488 }
+    ]
+  },
+  "\ud83d\ude09": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11qwssb"],
+    "sentiment": [
+      { "neg": 0.315, "neu": 0.51, "pos": 0.175, "compound": -0.6488 }
+    ]
+  },
+  "\ud83d\ude24": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83d\udc4f": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83e\udd1c": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83e\udd1b": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83d\udd5a": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83d\udd56": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83d\udd5e": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83c\udf43": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83d\udca7": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83d\udcaf": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83c\udfc6": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83c\udfc5": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83e\udef6": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lp1xd"],
+    "sentiment": [
+      { "neg": 0.141, "neu": 0.708, "pos": 0.15, "compound": 0.4328 }
+    ]
+  },
+  "\ud83c\udfa5": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lbhsp"],
+    "sentiment": [
+      { "neg": 0.08, "neu": 0.798, "pos": 0.122, "compound": 0.2732 }
+    ]
+  },
+  "\ud83d\udc49": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["11lbhsp", "11l4ne0"],
+    "sentiment": [
+      { "neg": 0.08, "neu": 0.798, "pos": 0.122, "compound": 0.2732 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83c\udffb": {
+    "frequency": 3,
+    "subreddits": ["emojipasta", "emojipasta", "emojipasta"],
+    "ids": ["11lbhsp", "118rrld", "10trtwu"],
+    "sentiment": [
+      { "neg": 0.08, "neu": 0.798, "pos": 0.122, "compound": 0.2732 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83d\udc4b": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11lbhsp"],
+    "sentiment": [
+      { "neg": 0.08, "neu": 0.798, "pos": 0.122, "compound": 0.2732 }
+    ]
+  },
+  "\ud83d\udc68": {
+    "frequency": 3,
+    "subreddits": ["emojipasta", "emojipasta", "emojipasta"],
+    "ids": ["11l4ne0", "118rrld", "10h6t50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 0.597, "pos": 0.403, "compound": 0.9158 }
+    ]
+  },
+  "\u2708": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11l4ne0"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\ude91": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["11l4ne0", "118rrld"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83d\udefb": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11enfub"],
+    "sentiment": [
+      { "neg": 0.238, "neu": 0.762, "pos": 0.0, "compound": -0.8286 }
+    ]
+  },
+  "\ud83d\udecf": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11enfub"],
+    "sentiment": [
+      { "neg": 0.238, "neu": 0.762, "pos": 0.0, "compound": -0.8286 }
+    ]
+  },
+  "\ud83e\udd75": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["11enfub"],
+    "sentiment": [
+      { "neg": 0.238, "neu": 0.762, "pos": 0.0, "compound": -0.8286 }
+    ]
+  },
+  "\ud83d\ude1c": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["119hecz"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.859, "pos": 0.141, "compound": 0.3818 }
+    ]
+  },
+  "\ud83e\udd58": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["119hecz"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.859, "pos": 0.141, "compound": 0.3818 }
+    ]
+  },
+  "\ud83d\udd7a": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["118rrld"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\udc6f": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["118rrld"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\udeb6": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["118rrld"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\uddaf": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["118rrld"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\udecb": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["118rrld"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\udc75": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["118rrld"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\udd85": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["118rrld"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83c\udd92": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["1157g50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.767, "pos": 0.233, "compound": 0.4648 }
+    ]
+  },
+  "\ud83d\udc65": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["1157g50", "10h6t50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.767, "pos": 0.233, "compound": 0.4648 },
+      { "neg": 0.0, "neu": 0.597, "pos": 0.403, "compound": 0.9158 }
+    ]
+  },
+  "\ud83d\ude03": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["1126weg"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.872, "pos": 0.128, "compound": 0.3612 }
+    ]
+  },
+  "\ud83d\udd28": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["1126weg"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.872, "pos": 0.128, "compound": 0.3612 }
+    ]
+  },
+  "\ud83d\udcac": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["1126weg"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.872, "pos": 0.128, "compound": 0.3612 }
+    ]
+  },
+  "\ud83e\udd2d": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["111xwi4"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.338, "pos": 0.662, "compound": 0.9559 }
+    ]
+  },
+  "\ud83c\udf80": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["111xwi4"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.338, "pos": 0.662, "compound": 0.9559 }
+    ]
+  },
+  "\ud83d\udc90": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["111xwi4"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.338, "pos": 0.662, "compound": 0.9559 }
+    ]
+  },
+  "\ud83c\udf5d": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10zlcxc"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83c\udf66": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["10z6bgj", "10ig3u8"],
+    "sentiment": [
+      { "neg": 0.308, "neu": 0.692, "pos": 0.0, "compound": -0.4588 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83e\udd76": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["10z6bgj", "108r9p8"],
+    "sentiment": [
+      { "neg": 0.308, "neu": 0.692, "pos": 0.0, "compound": -0.4588 },
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
+  },
+  "\ud83d\ude2b": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10z6bgj"],
+    "sentiment": [
+      { "neg": 0.308, "neu": 0.692, "pos": 0.0, "compound": -0.4588 }
+    ]
+  },
+  "\u26be": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10vlcze"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\u26bd": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10vlcze"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\u23f0": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10v57fn"],
+    "sentiment": [
+      { "neg": 0.202, "neu": 0.798, "pos": 0.0, "compound": -0.6486 }
+    ]
+  },
+  "\ud83d\udc8e": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10v57fn"],
+    "sentiment": [
+      { "neg": 0.202, "neu": 0.798, "pos": 0.0, "compound": -0.6486 }
+    ]
+  },
+  "\ud83d\udcf2": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10v57fn"],
+    "sentiment": [
+      { "neg": 0.202, "neu": 0.798, "pos": 0.0, "compound": -0.6486 }
+    ]
+  },
+  "\u2049": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["10v57fn", "10knph7"],
+    "sentiment": [
+      { "neg": 0.202, "neu": 0.798, "pos": 0.0, "compound": -0.6486 },
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }
+    ]
+  },
+  "\ud83d\udcf7": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10v57fn"],
+    "sentiment": [
+      { "neg": 0.202, "neu": 0.798, "pos": 0.0, "compound": -0.6486 }
+    ]
+  },
+  "\ud83d\udc71": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10trtwu"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83c\udffd": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "gardening"],
+    "ids": ["10trtwu", "11x0dsh"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 },
+      { "neg": 0.0, "neu": 0.785, "pos": 0.215, "compound": 0.8517 }
+    ]
+  },
+  "\ud83d\ude21": {
+    "frequency": 2,
+    "subreddits": ["emojipasta", "emojipasta"],
+    "ids": ["10rjxkl", "108r9p8"],
+    "sentiment": [
+      { "neg": 0.091, "neu": 0.565, "pos": 0.344, "compound": 0.8834 },
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
+  },
+  "\ud83d\uddbc": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10rjxkl"],
+    "sentiment": [
+      { "neg": 0.091, "neu": 0.565, "pos": 0.344, "compound": 0.8834 }
+    ]
+  },
+  "\ud83d\udca1": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10rjxkl"],
+    "sentiment": [
+      { "neg": 0.091, "neu": 0.565, "pos": 0.344, "compound": 0.8834 }
+    ]
+  },
+  "\ud83d\udeb3": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10r0czp"],
+    "sentiment": [
+      { "neg": 0.242, "neu": 0.55, "pos": 0.208, "compound": -0.0803 }
+    ]
+  },
+  "\ud83d\udeb7": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10r0czp"],
+    "sentiment": [
+      { "neg": 0.242, "neu": 0.55, "pos": 0.208, "compound": -0.0803 }
+    ]
+  },
+  "\ud83d\ude07": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10qigc6"],
+    "sentiment": [
+      { "neg": 0.123, "neu": 0.447, "pos": 0.43, "compound": 0.734 }
+    ]
+  },
+  "\ud83e\udd50": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10qh8ov"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\uded1": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10qb4z7"],
+    "sentiment": [
+      { "neg": 0.268, "neu": 0.732, "pos": 0.0, "compound": -0.5267 }
+    ]
+  },
+  "\u26a0": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10qb4z7"],
+    "sentiment": [
+      { "neg": 0.268, "neu": 0.732, "pos": 0.0, "compound": -0.5267 }
+    ]
+  },
+  "\u203c": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10qb4z7"],
+    "sentiment": [
+      { "neg": 0.268, "neu": 0.732, "pos": 0.0, "compound": -0.5267 }
+    ]
+  },
+  "\ud83d\udc4a": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10pj9ne"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\udc86": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10pj9ne"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\udc7f": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10nveev"],
+    "sentiment": [
+      { "neg": 0.268, "neu": 0.732, "pos": 0.0, "compound": -0.5106 }
+    ]
+  },
+  "\ud83d\udca9": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10nveev"],
+    "sentiment": [
+      { "neg": 0.268, "neu": 0.732, "pos": 0.0, "compound": -0.5106 }
+    ]
+  },
+  "\ud83d\udcbb": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10noq9c"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\udde0": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10noq9c"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\u26d3": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10nl0tw"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\u2696": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10nl0tw"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83c\udf4b": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10nl0tw"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\udd90": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10nl0tw"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83d\udeab": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10muwl9"],
+    "sentiment": [
+      { "neg": 0.206, "neu": 0.794, "pos": 0.0, "compound": -0.3818 }
+    ]
+  },
+  "\ud83d\udc4e": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10muwl9"],
+    "sentiment": [
+      { "neg": 0.206, "neu": 0.794, "pos": 0.0, "compound": -0.3818 }
+    ]
+  },
+  "\u2139": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10ljvot"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.741, "pos": 0.259, "compound": 0.6369 }
+    ]
+  },
+  "\ud83d\udc9f": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10ljvot"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.741, "pos": 0.259, "compound": 0.6369 }
+    ]
+  },
+  "\ud83c\udd7e": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10ljvot"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.741, "pos": 0.259, "compound": 0.6369 }
+    ]
+  },
+  "\u24c2": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10ljvot"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.741, "pos": 0.259, "compound": 0.6369 }
+    ]
+  },
+  "\ud83c\udd96": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10ljvot"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.741, "pos": 0.259, "compound": 0.6369 }
+    ]
+  },
+  "\ud83d\udc51": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10knw0k"],
+    "sentiment": [{ "neg": 0.179, "neu": 0.821, "pos": 0.0, "compound": -0.34 }]
+  },
+  "\u26f9": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10knw0k"],
+    "sentiment": [{ "neg": 0.179, "neu": 0.821, "pos": 0.0, "compound": -0.34 }]
+  },
+  "\ud83d\ude98": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10h6t50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.597, "pos": 0.403, "compound": 0.9158 }
+    ]
+  },
+  "\ud83d\udc8b": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10h6t50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.597, "pos": 0.403, "compound": 0.9158 }
+    ]
+  },
+  "\ud83c\udd93": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10h6t50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.597, "pos": 0.403, "compound": 0.9158 }
+    ]
+  },
+  "\ud83c\udf0e": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10h6t50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.597, "pos": 0.403, "compound": 0.9158 }
+    ]
+  },
+  "\ud83d\ude2a": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10h6t50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.597, "pos": 0.403, "compound": 0.9158 }
+    ]
+  },
+  "\ud83c\udf93": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10h6t50"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.597, "pos": 0.403, "compound": 0.9158 }
+    ]
+  },
+  "\ud83d\udc72": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10fzgm3"],
+    "sentiment": [
+      { "neg": 0.246, "neu": 0.754, "pos": 0.0, "compound": -0.6408 }
+    ]
+  },
+  "\ud83c\udfee": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10fzgm3"],
+    "sentiment": [
+      { "neg": 0.246, "neu": 0.754, "pos": 0.0, "compound": -0.6408 }
+    ]
+  },
+  "\ud83c\udf59": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10ez78f"],
+    "sentiment": [{ "neg": 0.0, "neu": 1.0, "pos": 0.0, "compound": 0.0 }]
+  },
+  "\ud83e\udd24": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10e0vr2"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.469, "pos": 0.531, "compound": 0.5267 }
+    ]
+  },
+  "\ud83d\ude39": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["10dom77"],
+    "sentiment": [
+      { "neg": 0.114, "neu": 0.659, "pos": 0.228, "compound": 0.4404 }
+    ]
+  },
+  "\ud83e\udd71": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["108r9p8"],
+    "sentiment": [
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
+  },
+  "\ud83d\ude0c": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["108r9p8"],
+    "sentiment": [
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
+  },
+  "\ud83d\udc69": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["108r9p8"],
+    "sentiment": [
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
+  },
+  "\ud83c\udfa4": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["108r9p8"],
+    "sentiment": [
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
+  },
+  "\ud83d\ude2c": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["108r9p8"],
+    "sentiment": [
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
+  },
+  "\ud83d\ude40": {
+    "frequency": 1,
+    "subreddits": ["emojipasta"],
+    "ids": ["108r9p8"],
+    "sentiment": [
+      { "neg": 0.128, "neu": 0.484, "pos": 0.388, "compound": 0.9578 }
+    ]
+  },
+  "\ud83e\udd37": {
+    "frequency": 1,
+    "subreddits": ["facepalm"],
+    "ids": ["11xmdv6"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.633, "pos": 0.367, "compound": 0.4404 }
+    ]
+  },
+  "\ud83d\udc83": {
+    "frequency": 1,
+    "subreddits": ["gardening"],
+    "ids": ["11x0dsh"],
+    "sentiment": [
+      { "neg": 0.0, "neu": 0.785, "pos": 0.215, "compound": 0.8517 }
+    ]
+  },
+  "\ud83e\udd2f": {
+    "frequency": 1,
+    "subreddits": ["lgbt"],
+    "ids": ["11wy7xp"],
+    "sentiment": [
+      { "neg": 0.407, "neu": 0.593, "pos": 0.0, "compound": -0.6705 }
     ]
   }
 }
