@@ -11,6 +11,8 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import nltk
 from json.decoder import JSONDecodeError
+import matplotlib.pyplot as plt
+from itertools import zip_longest
 
 
 def load_credentials():
@@ -107,7 +109,7 @@ def query_api():
                         titles_and_emojis[emoji_code]['sentiment'] = [sentiment.polarity_scores(title)]
                         titles_and_emojis['searched_posts']['found'] += 1
                         titles_and_emojis['searched_subs'][subreddit] += 1
-                #found = True
+                # found = True
             last_request_time = time.time()
             if found:
                 break
@@ -118,19 +120,28 @@ def query_api():
     return
 
 
-def format_json():
-    try:
-        with open('titles_and_emojis.json', 'r') as f:
-            data = json.load(f)
-    except json.JSONDecodeError:
-        data = {}
-    pprint(data)
+def visualize():
+    with open('titles_and_emojis.json', 'r') as f:
+        data = json.load(f)
+
+    fig, ax = plt.subplots()
+
+    # Add a Unicode emoji using the Text method
+    ax.text(0.5, 0.5, '\U0001F600', fontsize=50, ha='center')
+
+    # Customize the plot
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.set_axis_off()
+
+    # Show the plot
+    plt.show()
     return
 
 
 def main():
-    query_api()
-    format_json()
+    # query_api()
+    visualize()
     return
 
 
