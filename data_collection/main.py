@@ -53,7 +53,7 @@ def query_api():
         'travel',
         'emojipasta'
     ]
-    num_posts = 100
+    num_posts = 1
     found = False
     last_request_time = time.time()
     sentiment = SentimentIntensityAnalyzer()
@@ -78,7 +78,9 @@ def query_api():
     for subreddit in subreddits:
         print(f'Subreddit: {subreddit}')
         if subreddit not in titles_and_emojis['searched_subs']:
-            titles_and_emojis['searched_subs'][subreddit] = 0
+            titles_and_emojis['searched_subs'][subreddit] = {}
+            titles_and_emojis['searched_subs'][subreddit]['count'] = 0
+            titles_and_emojis['searched_subs'][subreddit]['topics'] = []
             titles_and_emojis['searched_subs']['count'] += 1
 
         for post_index, post in enumerate(reddit.subreddit(subreddit).new(limit=num_posts)):
@@ -100,7 +102,7 @@ def query_api():
                             titles_and_emojis[emoji_code]['ids'].append(post_id)
                             titles_and_emojis[emoji_code]['sentiment'].append(sentiment.polarity_scores(title))
                             titles_and_emojis['searched_posts']['found'] += 1
-                            titles_and_emojis['searched_subs'][subreddit] += 1
+                            titles_and_emojis['searched_subs'][subreddit]['count'] += 1
                     else:
                         titles_and_emojis[emoji_code] = {}
                         titles_and_emojis[emoji_code]['frequency'] = 1
@@ -140,8 +142,8 @@ def visualize():
 
 
 def main():
-    # query_api()
-    visualize()
+    query_api()
+    # visualize()
     return
 
 

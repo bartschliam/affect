@@ -5,7 +5,7 @@
     "aww": { "count": 70, "topics": [] },
     "beauty": { "count": 10, "topics": [] },
     "bunnies": { "count": 39, "topics": [] },
-    "comics": { "count": 16, "topics": [] },
+    "comics": { "count": 18, "topics": [] },
     "design": { "count": 4, "topics": [] },
     "facepalm": { "count": 58, "topics": [] },
     "fashion": { "count": 22, "topics": [] },
@@ -21,7 +21,7 @@
     "travel": { "count": 4, "topics": [] },
     "emojipasta": { "count": 236, "topics": [] }
   },
-  "searched_posts": { "count": 12802, "found": 615 },
+  "searched_posts": { "count": 12821, "found": 617 },
   "\ud83d\ude80": {
     "frequency": 3,
     "subreddits": ["cloudwater", "emojipasta", "skateboarding"],
@@ -33,7 +33,7 @@
     ]
   },
   "\ud83d\ude02": {
-    "frequency": 19,
+    "frequency": 20,
     "subreddits": [
       "cloudwater",
       "facepalm",
@@ -53,7 +53,8 @@
       "aww",
       "bunnies",
       "funny",
-      "snowboarding"
+      "snowboarding",
+      "comics"
     ],
     "ids": [
       "11kxsrk",
@@ -74,7 +75,8 @@
       "123l7fg",
       "1238455",
       "1233wsn",
-      "123b29r"
+      "123b29r",
+      "124naay"
     ],
     "sentiment": [
       { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 },
@@ -95,7 +97,8 @@
       { "neg": 0.118, "neu": 0.435, "pos": 0.447, "compound": 0.743 },
       { "neg": 0.069, "neu": 0.794, "pos": 0.137, "compound": 0.4404 },
       { "neg": 0.206, "neu": 0.447, "pos": 0.347, "compound": 0.8974 },
-      { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 }
+      { "neg": 0.162, "neu": 0.513, "pos": 0.325, "compound": 0.4404 },
+      { "neg": 0.229, "neu": 0.596, "pos": 0.174, "compound": -0.0516 }
     ]
   },
   "\ud83e\udd29": {
@@ -453,7 +456,7 @@
     ]
   },
   "\ud83d\ude2d": {
-    "frequency": 9,
+    "frequency": 10,
     "subreddits": [
       "bunnies",
       "facepalm",
@@ -463,7 +466,8 @@
       "aww",
       "funny",
       "fashion",
-      "gardening"
+      "gardening",
+      "comics"
     ],
     "ids": [
       "11w3285",
@@ -474,7 +478,8 @@
       "11z8a4q",
       "11yt5lx",
       "1202m8g",
-      "123km1y"
+      "123km1y",
+      "124naay"
     ],
     "sentiment": [
       { "neg": 0.108, "neu": 0.625, "pos": 0.267, "compound": 0.8225 },
@@ -485,7 +490,8 @@
       { "neg": 0.333, "neu": 0.215, "pos": 0.452, "compound": 0.2732 },
       { "neg": 0.368, "neu": 0.632, "pos": 0.0, "compound": -0.8519 },
       { "neg": 0.0, "neu": 0.712, "pos": 0.288, "compound": 0.5352 },
-      { "neg": 0.327, "neu": 0.625, "pos": 0.048, "compound": -0.8225 }
+      { "neg": 0.327, "neu": 0.625, "pos": 0.048, "compound": -0.8225 },
+      { "neg": 0.229, "neu": 0.596, "pos": 0.174, "compound": -0.0516 }
     ]
   },
   "\ud83d\ude14": {
