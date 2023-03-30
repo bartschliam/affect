@@ -13,6 +13,8 @@ import nltk
 from json.decoder import JSONDecodeError
 import matplotlib.pyplot as plt
 from itertools import zip_longest
+from matplotlib.font_manager import FontProperties
+import numpy as np
 
 
 def load_credentials():
@@ -125,25 +127,68 @@ def query_api():
 def visualize():
     with open('titles_and_emojis.json', 'r') as f:
         data = json.load(f)
+    # barchart_subreddit(data)
+    average_subreddit(data)
+    return
 
-    fig, ax = plt.subplots()
 
-    # Add a Unicode emoji using the Text method
-    ax.text(0.5, 0.5, '\U0001F600', fontsize=50, ha='center')
+def average_subreddit(data):
+    neg_scores = {}
+    neu_scores = {}
+    pos_scores = {}
+    compound_scores = {}
+    for key, value in data.items():
+        if key not in ['searched_subs', 'searched_posts']:
+            for i, subreddit in enumerate(value["subreddits"]):
+                if subreddit not in neg_scores:
+                    neg_scores[subreddit] = 0
+                if subreddit not in neu_scores:
+                    neu_scores[subreddit] = 0
+                if subreddit not in pos_scores:
+                    pos_scores[subreddit] = 0
+                if subreddit not in compound_scores:
+                    compound_scores[subreddit] = 0
+                neg_scores[subreddit] += value["sentiment"][i]["neg"]
+                neu_scores[subreddit] += value["sentiment"][i]["neu"]
+                pos_scores[subreddit] += value["sentiment"][i]["pos"]
+                compound_scores[subreddit] += value["sentiment"][i]["compound"]
+    neg_list = [neg_scores[subreddit] for subreddit in neg_scores]
+    neu_list = [neu_scores[subreddit] for subreddit in neu_scores]
+    pos_list = [pos_scores[subreddit] for subreddit in pos_scores]
+    compound_list = [compound_scores[subreddit] for subreddit in compound_scores]
+    subreddits = list(neg_scores.keys())
+    plt.bar(subreddits, neg_list, color='r', label='Negative')
+    plt.bar(subreddits, neu_list, color='b', bottom=neg_list, label='Neutral')
+    plt.bar(subreddits, pos_list, color='g', bottom=[sum(x) for x in zip(neg_list, neu_list)], label='Positive')
+    plt.bar(subreddits, compound_list, color='orange', bottom=[sum(x) for x in zip(neg_list, neu_list, pos_list)], label='Compound')
+    plt.xlabel('Subreddits')
+    plt.ylabel('Sentiment Scores')
+    plt.title('Sentiment Scores by Subreddit')
+    plt.xticks(rotation=45)
+    plt.legend()
 
-    # Customize the plot
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
-    ax.set_axis_off()
+    # show plot
+    plt.show()
+    return
 
-    # Show the plot
+
+def barchart_subreddit(data):
+    sorted_data = {}
+    for subreddit, data in data["searched_subs"].items():
+        if subreddit != "count":
+            sorted_data[subreddit] = data['count']
+    sorted_data = dict(sorted(sorted_data.items(), key=lambda item: item[1]))
+    plt.bar(sorted_data.keys(), sorted_data.values())
+    plt.xticks(rotation=45)
+    plt.title('Subreddit Emoji Frequency')
+    plt.ylabel('Emoji Count')
     plt.show()
     return
 
 
 def main():
-    query_api()
-    # visualize()
+    # query_api()
+    visualize()
     return
 
 
