@@ -57,11 +57,7 @@
     },
     "facepalm": {
       "count": 58,
-      "topics": [
-        ":Coronavirus:🇨​🇴​🇻​🇮​🇩​",
-        ":Misc: 🇲​🇮​🇸​🇨​",
-        ":Protest:🇵​🇷​🇴​🇹​🇪​🇸​🇹​"
-      ]
+      "topics": ["Coronavirus", "Misc", "Protest"]
     },
     "fashion": {
       "count": 22,
@@ -100,7 +96,7 @@
     "lgbt": {
       "count": 40,
       "topics": [
-        "⚠ Content Warning: {describe here}",
+        "Content Warning: {describe here}",
         "Selfie :snoo:",
         "Art/Creative",
         "Need Advice :snoo_thoughtful:",
@@ -179,25 +175,24 @@
     "spirituality": {
       "count": 8,
       "topics": [
-        "General ✨",
-        "Religious 🙏",
-        "Self-Promoting 🙋‍♂️",
-        "Self-Transformation 🔄",
-        "Lifestyle 🏝️",
-        "Question ❓",
-        "Relationships 💞",
-        "Past Life ⏪️",
-        "Astral Projection 🔮",
-        "Spirit Guide 😇",
-        "Psychedelia 🌌",
-        "Dreams 💭",
+        "General",
+        "Religious",
+        "Self-Promoting",
+        "Self-Transformation",
+        "Lifestyle",
+        "Question",
+        "Relationships",
+        "Past Life",
+        "Astral Projection",
+        "Spirit Guide",
+        "Psychedelia",
+        "Dreams",
         "Philosophy  :snoo_thoughtful:"
       ]
     },
     "travel": {
       "count": 4,
       "topics": [
-        "",
         "Images",
         "Itinerary",
         "Question",
@@ -213,13 +208,7 @@
     },
     "emojipasta": {
       "count": 236,
-      "topics": [
-        "",
-        "Fulfilled ✅ Request 🙏",
-        "Request 🙏",
-        "OC 😎",
-        "Repost ♻️"
-      ]
+      "topics": ["Fulfilled Request", "Request", "OC", "Repost"]
     }
   },
   "searched_posts": {
