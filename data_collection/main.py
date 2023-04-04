@@ -15,6 +15,9 @@ import matplotlib.pyplot as plt
 from itertools import zip_longest
 from matplotlib.font_manager import FontProperties
 import numpy as np
+import statistics
+import random
+import math
 
 
 def load_credentials():
@@ -129,11 +132,81 @@ def visualize():
         data = json.load(f)
     # barchart_subreddit(data)
     # average_subreddit(data)
-    heatmap(data)
+    heatmap(data, 'compound', 'Compound')
+    #heatmap(data, 'pos', 'Positive')
+    #heatmap(data, 'neg', 'Negative')
+    #heatmap(data, 'neu', 'Neutral')
     return
 
 
-def heatmap(data):
+def heatmap(data, trait, title):
+    new_data = dict(list(data.items())[2:])
+    emoji_labels = []
+    emoji_sizes = []
+    emoji_colors = []
+    emoji_trait_avgs = []
+    subreddit_modes = {}
+    subreddit_color_map = {}
+
+    for emoji, sentiment in new_data.items():
+        subreddits = []
+        for s in sentiment["subreddits"]:
+            subreddits.append(s)
+        subreddit_mode = statistics.mode(subreddits)
+        trait_avg = sum([s[trait] for s in sentiment["sentiment"]]) / len(sentiment["sentiment"])
+        emoji_labels.append(emoji)
+        emoji_sizes.append(trait_avg * 1000)
+        emoji_trait_avgs.append(trait_avg)
+        if subreddit_mode not in subreddit_color_map:
+            color = f"C{len(subreddit_color_map)}"
+            subreddit_color_map[subreddit_mode] = color
+        else:
+            color = subreddit_color_map[subreddit_mode]
+        subreddit_modes[emoji] = subreddit_mode
+        emoji_colors.append(color)
+    size = 80
+    num_graphs = math.ceil(len(new_data)/size)
+
+    for i in range(num_graphs):
+        fig, ax = plt.subplots(figsize=(5, 5))
+        start_idx = i*size
+        end_idx = min(start_idx + size, len(new_data))
+        sub_keys = list(new_data.keys())[start_idx:end_idx]
+        sub_data = {k: new_data[k] for k in sub_keys}
+        emoji_labels = []
+        emoji_sizes = []
+        emoji_colors = []
+        emoji_trait_avgs = []
+        subreddit_modes = {}
+        subreddit_color_map = {}
+        for emoji, sentiment in sub_data.items():
+            subreddits = []
+            for s in sentiment["subreddits"]:
+                subreddits.append(s)
+            subreddit_mode = statistics.mode(subreddits)
+            trait_avg = sum([s[trait] for s in sentiment["sentiment"]]) / len(sentiment["sentiment"])
+            emoji_labels.append(emoji)
+            emoji_sizes.append(trait_avg * 1000)
+            emoji_trait_avgs.append(trait_avg)
+            if subreddit_mode not in subreddit_color_map:
+                color = f"C{len(subreddit_color_map)}"
+                subreddit_color_map[subreddit_mode] = color
+            else:
+                color = subreddit_color_map[subreddit_mode]
+            subreddit_modes[emoji] = subreddit_mode
+            emoji_colors.append(color)
+        scatter = ax.scatter(x=emoji_trait_avgs, y=range(len(emoji_labels)), s=emoji_sizes, c=emoji_colors, alpha=0.7, cmap=subreddit_color_map)
+        handles = []
+        labels = []
+        for subreddit, color in subreddit_color_map.items():
+            handles.append(ax.scatter([], [], c=color, alpha=0.7, label=subreddit))
+            labels.append(subreddit)
+        ax.legend(handles, labels, loc='lower right', title='Subreddits')
+        ax.set_yticks(range(len(emoji_labels)))
+        ax.set_yticklabels(emoji_labels)
+        ax.set_xlabel(f"Average {title} Score, Graph {i+1}")
+        ax.set_ylabel("Emoji")
+        plt.show()
 
     return
 
