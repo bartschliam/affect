@@ -128,15 +128,18 @@ def visualize():
     with open('titles_and_emojis.json', 'r') as f:
         data = json.load(f)
     # barchart_subreddit(data)
-    average_subreddit(data)
+    # average_subreddit(data)
+    heatmap(data)
+    return
+
+
+def heatmap(data):
+
     return
 
 
 def average_subreddit(data):
-    neg_scores = {}
-    neu_scores = {}
-    pos_scores = {}
-    compound_scores = {}
+    neg_scores, neu_scores, pos_scores, compound_scores = {}, {}, {}, {}
     for key, value in data.items():
         if key not in ['searched_subs', 'searched_posts']:
             for i, subreddit in enumerate(value["subreddits"]):
@@ -152,22 +155,19 @@ def average_subreddit(data):
                 neu_scores[subreddit] += value["sentiment"][i]["neu"]
                 pos_scores[subreddit] += value["sentiment"][i]["pos"]
                 compound_scores[subreddit] += value["sentiment"][i]["compound"]
-    neg_list = [neg_scores[subreddit] for subreddit in neg_scores]
-    neu_list = [neu_scores[subreddit] for subreddit in neu_scores]
-    pos_list = [pos_scores[subreddit] for subreddit in pos_scores]
-    compound_list = [compound_scores[subreddit] for subreddit in compound_scores]
     subreddits = list(neg_scores.keys())
-    plt.bar(subreddits, neg_list, color='r', label='Negative')
-    plt.bar(subreddits, neu_list, color='b', bottom=neg_list, label='Neutral')
-    plt.bar(subreddits, pos_list, color='g', bottom=[sum(x) for x in zip(neg_list, neu_list)], label='Positive')
-    plt.bar(subreddits, compound_list, color='orange', bottom=[sum(x) for x in zip(neg_list, neu_list, pos_list)], label='Compound')
+    sorted_subreddits = sorted(subreddits, key=lambda x: neg_scores[x] + neu_scores[x] + pos_scores[x] + compound_scores[x])
+    plt.bar(sorted_subreddits, [neg_scores[subreddit] for subreddit in sorted_subreddits], color='r', label='Negative')
+    plt.bar(sorted_subreddits, [neu_scores[subreddit] for subreddit in sorted_subreddits], color='b', bottom=[neg_scores[subreddit] for subreddit in sorted_subreddits], label='Neutral')
+    plt.bar(sorted_subreddits, [pos_scores[subreddit] for subreddit in sorted_subreddits], color='g', bottom=[
+            neg_scores[subreddit] + neu_scores[subreddit] for subreddit in sorted_subreddits], label='Positive')
+    plt.bar(sorted_subreddits, [compound_scores[subreddit] for subreddit in sorted_subreddits], color='orange', bottom=[
+            neg_scores[subreddit] + neu_scores[subreddit] + pos_scores[subreddit] for subreddit in sorted_subreddits], label='Compound')
     plt.xlabel('Subreddits')
     plt.ylabel('Sentiment Scores')
     plt.title('Sentiment Scores by Subreddit')
     plt.xticks(rotation=45)
     plt.legend()
-
-    # show plot
     plt.show()
     return
 
