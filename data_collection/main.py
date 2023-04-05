@@ -132,10 +132,10 @@ def visualize():
         data = json.load(f)
     # barchart_subreddit(data)
     # average_subreddit(data)
-    heatmap(data, 'compound', 'Compound')
+    #heatmap(data, 'compound', 'Compound')
     #heatmap(data, 'pos', 'Positive')
     #heatmap(data, 'neg', 'Negative')
-    #heatmap(data, 'neu', 'Neutral')
+    heatmap(data, 'neu', 'Neutral')
     return
 
 
@@ -164,7 +164,7 @@ def heatmap(data, trait, title):
             color = subreddit_color_map[subreddit_mode]
         subreddit_modes[emoji] = subreddit_mode
         emoji_colors.append(color)
-    size = 80
+    size = 40
     num_graphs = math.ceil(len(new_data)/size)
 
     for i in range(num_graphs):
