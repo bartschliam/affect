@@ -130,12 +130,13 @@ def query_api():
 def visualize():
     with open('titles_and_emojis.json', 'r') as f:
         data = json.load(f)
-    # barchart_subreddit(data)
-    # average_subreddit(data)
-    #heatmap(data, 'compound', 'Compound')
-    #heatmap(data, 'pos', 'Positive')
-    #heatmap(data, 'neg', 'Negative')
+    barchart_subreddit(data)
+    average_subreddit(data)
+    heatmap(data, 'compound', 'Compound')
+    heatmap(data, 'pos', 'Positive')
+    heatmap(data, 'neg', 'Negative')
     heatmap(data, 'neu', 'Neutral')
+
     return
 
 
@@ -251,7 +252,11 @@ def barchart_subreddit(data):
         if subreddit != "count":
             sorted_data[subreddit] = data['count']
     sorted_data = dict(sorted(sorted_data.items(), key=lambda item: item[1]))
-    plt.bar(sorted_data.keys(), sorted_data.values())
+    colors = []
+    for i in range(len(sorted_data)):
+        colors.append('#%06X' % random.randint(0, 0xFFFFFF))
+
+    plt.bar(sorted_data.keys(), sorted_data.values(), color=colors)
     plt.xticks(rotation=45)
     plt.title('Subreddit Emoji Frequency')
     plt.ylabel('Emoji Count')
