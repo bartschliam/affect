@@ -242,7 +242,7 @@ def average_subreddit(data):
         neg_scores[subreddit] + neu_scores[subreddit] for subreddit in sorted_subreddits], label='Positive')
     plt.bar(sorted_subreddits, [compound_scores[subreddit] for subreddit in sorted_subreddits], color='orange', bottom=[
         neg_scores[subreddit] + neu_scores[subreddit] + pos_scores[subreddit] for subreddit in sorted_subreddits],
-            label='Compound')
+        label='Compound')
     plt.xlabel('Subreddits')
     plt.ylabel('Sentiment Scores')
     plt.title('Sentiment Scores by Subreddit')
@@ -318,15 +318,11 @@ def topemoji_sub_table(data):
     print(df)
     df.to_csv('../graphs/top_emoji_table.csv', index_label='index', index=False)
 
-
     df2 = pd.DataFrame.from_dict(rare_emoji, orient='index')
     df2.reset_index(inplace=True)
     df2.rename(columns={'index': 'subreddit'}, inplace=True)
     print(df2)
     df2.to_csv('../graphs/rare_emoji_table.csv', index=False)
-
-
-
 
 
 def main():
