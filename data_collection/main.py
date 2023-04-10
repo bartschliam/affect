@@ -18,6 +18,7 @@ import numpy as np
 import statistics
 import random
 import math
+import pandas as pd
 
 
 def load_credentials():
@@ -128,7 +129,7 @@ def query_api():
 
 
 def visualize():
-    with open('titles_and_emojis.json', 'r') as f:
+    with open('titles_and_emojis.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     barchart_subreddit(data)
     average_subreddit(data)
@@ -136,6 +137,7 @@ def visualize():
     heatmap(data, 'pos', 'Positive')
     heatmap(data, 'neg', 'Negative')
     heatmap(data, 'neu', 'Neutral')
+    topemoji_sub_table(data)
 
     return
 
@@ -166,11 +168,11 @@ def heatmap(data, trait, title):
         subreddit_modes[emoji] = subreddit_mode
         emoji_colors.append(color)
     size = 40
-    num_graphs = math.ceil(len(new_data)/size)
+    num_graphs = math.ceil(len(new_data) / size)
 
     for i in range(num_graphs):
         fig, ax = plt.subplots(figsize=(5, 5))
-        start_idx = i*size
+        start_idx = i * size
         end_idx = min(start_idx + size, len(new_data))
         sub_keys = list(new_data.keys())[start_idx:end_idx]
         sub_data = {k: new_data[k] for k in sub_keys}
@@ -196,7 +198,8 @@ def heatmap(data, trait, title):
                 color = subreddit_color_map[subreddit_mode]
             subreddit_modes[emoji] = subreddit_mode
             emoji_colors.append(color)
-        scatter = ax.scatter(x=emoji_trait_avgs, y=range(len(emoji_labels)), s=emoji_sizes, c=emoji_colors, alpha=0.7, cmap=subreddit_color_map)
+        scatter = ax.scatter(x=emoji_trait_avgs, y=range(len(emoji_labels)), s=emoji_sizes, c=emoji_colors, alpha=0.7,
+                             cmap=subreddit_color_map)
         handles = []
         labels = []
         for subreddit, color in subreddit_color_map.items():
@@ -205,7 +208,7 @@ def heatmap(data, trait, title):
         ax.legend(handles, labels, loc='lower right', title='Subreddits')
         ax.set_yticks(range(len(emoji_labels)))
         ax.set_yticklabels(emoji_labels)
-        ax.set_xlabel(f"Average {title} Score, Graph {i+1}")
+        ax.set_xlabel(f"Average {title} Score, Graph {i + 1}")
         ax.set_ylabel("Emoji")
         plt.show()
 
@@ -230,13 +233,16 @@ def average_subreddit(data):
                 pos_scores[subreddit] += value["sentiment"][i]["pos"]
                 compound_scores[subreddit] += value["sentiment"][i]["compound"]
     subreddits = list(neg_scores.keys())
-    sorted_subreddits = sorted(subreddits, key=lambda x: neg_scores[x] + neu_scores[x] + pos_scores[x] + compound_scores[x])
+    sorted_subreddits = sorted(subreddits,
+                               key=lambda x: neg_scores[x] + neu_scores[x] + pos_scores[x] + compound_scores[x])
     plt.bar(sorted_subreddits, [neg_scores[subreddit] for subreddit in sorted_subreddits], color='r', label='Negative')
-    plt.bar(sorted_subreddits, [neu_scores[subreddit] for subreddit in sorted_subreddits], color='b', bottom=[neg_scores[subreddit] for subreddit in sorted_subreddits], label='Neutral')
+    plt.bar(sorted_subreddits, [neu_scores[subreddit] for subreddit in sorted_subreddits], color='b',
+            bottom=[neg_scores[subreddit] for subreddit in sorted_subreddits], label='Neutral')
     plt.bar(sorted_subreddits, [pos_scores[subreddit] for subreddit in sorted_subreddits], color='g', bottom=[
-            neg_scores[subreddit] + neu_scores[subreddit] for subreddit in sorted_subreddits], label='Positive')
+        neg_scores[subreddit] + neu_scores[subreddit] for subreddit in sorted_subreddits], label='Positive')
     plt.bar(sorted_subreddits, [compound_scores[subreddit] for subreddit in sorted_subreddits], color='orange', bottom=[
-            neg_scores[subreddit] + neu_scores[subreddit] + pos_scores[subreddit] for subreddit in sorted_subreddits], label='Compound')
+        neg_scores[subreddit] + neu_scores[subreddit] + pos_scores[subreddit] for subreddit in sorted_subreddits],
+            label='Compound')
     plt.xlabel('Subreddits')
     plt.ylabel('Sentiment Scores')
     plt.title('Sentiment Scores by Subreddit')
@@ -264,9 +270,70 @@ def barchart_subreddit(data):
     return
 
 
+def emoji_number():
+    with open('titles_and_emojis.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+        count = []
+        for key, value in data.items():
+            if key not in ['searched_subs', 'searched_posts']:
+                count.append(value["frequency"])
+        print(count)
+
+
+def topemoji_sub_table(data):
+    subreddits = {}
+    for key, data in data.items():
+        if key not in ['searched_subs', 'searched_posts']:
+            for subreddit in data['subreddits']:
+                if subreddit not in subreddits:
+                    subreddits[subreddit] = {}
+                if key not in subreddits[subreddit]:
+                    subreddits[subreddit][key] = 1
+                else:
+                    subreddits[subreddit][key] += 1
+
+    top_emoji = {}
+    rare_emoji = {}
+
+    for key in subreddits:
+        min = 10000
+        max = 0
+        top_emoji[key] = {}
+        rare_emoji[key] = {}
+        for emoji in subreddits[key]:
+            if subreddits[key][emoji] < min:
+                min = subreddits[key][emoji]
+                rare_emoji[key]["rare_emoji"] = emoji
+                rare_emoji[key]["count"] = min
+
+            if subreddits[key][emoji] > max:
+                max = subreddits[key][emoji]
+                top_emoji[key]["top_emoji"] = emoji
+                top_emoji[key]["count"] = max
+
+    df = pd.DataFrame.from_dict(top_emoji, orient='index')
+    # add the row index as a column in the dataframe
+    df.reset_index(inplace=True)
+    df.rename(columns={'index': 'subreddit'}, inplace=True)
+    print(df)
+    df.to_csv('../graphs/top_emoji_table.csv', index_label='index', index=False)
+
+
+    df2 = pd.DataFrame.from_dict(rare_emoji, orient='index')
+    df2.reset_index(inplace=True)
+    df2.rename(columns={'index': 'subreddit'}, inplace=True)
+    print(df2)
+    df2.to_csv('../graphs/rare_emoji_table.csv', index=False)
+
+
+
+
+
 def main():
     # query_api()
-    visualize()
+    # visualize()
+    # emoji_number()
+
     return
 
 
