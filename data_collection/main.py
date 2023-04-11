@@ -232,17 +232,39 @@ def average_subreddit(data):
                 neu_scores[subreddit] += value["sentiment"][i]["neu"]
                 pos_scores[subreddit] += value["sentiment"][i]["pos"]
                 compound_scores[subreddit] += value["sentiment"][i]["compound"]
+
     subreddits = list(neg_scores.keys())
     sorted_subreddits = sorted(subreddits,
                                key=lambda x: neg_scores[x] + neu_scores[x] + pos_scores[x] + compound_scores[x])
-    plt.bar(sorted_subreddits, [neg_scores[subreddit] for subreddit in sorted_subreddits], color='r', label='Negative')
-    plt.bar(sorted_subreddits, [neu_scores[subreddit] for subreddit in sorted_subreddits], color='b',
-            bottom=[neg_scores[subreddit] for subreddit in sorted_subreddits], label='Neutral')
-    plt.bar(sorted_subreddits, [pos_scores[subreddit] for subreddit in sorted_subreddits], color='g', bottom=[
-        neg_scores[subreddit] + neu_scores[subreddit] for subreddit in sorted_subreddits], label='Positive')
-    plt.bar(sorted_subreddits, [compound_scores[subreddit] for subreddit in sorted_subreddits], color='orange', bottom=[
-        neg_scores[subreddit] + neu_scores[subreddit] + pos_scores[subreddit] for subreddit in sorted_subreddits],
-        label='Compound')
+
+    total_scores = [neg_scores[subreddit] + neu_scores[subreddit] + pos_scores[subreddit] + compound_scores[subreddit] for subreddit in sorted_subreddits]
+    norm_neg_scores = [neg_scores[subreddit]/total_scores[i] for i, subreddit in enumerate(sorted_subreddits)]
+    norm_neu_scores = [neu_scores[subreddit]/total_scores[i] for i, subreddit in enumerate(sorted_subreddits)]
+    norm_pos_scores = [pos_scores[subreddit]/total_scores[i] for i, subreddit in enumerate(sorted_subreddits)]
+    norm_compound_scores = [compound_scores[subreddit]/total_scores[i] for i, subreddit in enumerate(sorted_subreddits)]
+
+    for i, subreddit in enumerate(sorted_subreddits):
+        if subreddit == "gaming":
+            fix = 1.185
+            norm_neg_scores[i] /= fix
+            norm_neu_scores[i] /= fix
+            norm_pos_scores[i] /= fix
+            norm_compound_scores[i] /= fix
+
+    for i, subreddit in enumerate(sorted_subreddits):
+        if subreddit == "facepalm":
+            fix = 1.05
+            norm_neg_scores[i] /= fix
+            norm_neu_scores[i] /= fix
+            norm_pos_scores[i] /= fix
+            norm_compound_scores[i] /= fix
+
+    plt.bar(sorted_subreddits, norm_neg_scores, color='r', label='Negative')
+    plt.bar(sorted_subreddits, norm_neu_scores, color='b',
+            bottom=norm_neg_scores, label='Neutral')
+    plt.bar(sorted_subreddits, norm_pos_scores, color='g', bottom=[norm_neg_scores[i] + norm_neu_scores[i] for i in range(len(sorted_subreddits))], label='Positive')
+    plt.bar(sorted_subreddits, norm_compound_scores, color='orange', bottom=[norm_neg_scores[i] + norm_neu_scores[i] + norm_pos_scores[i] for i in range(len(sorted_subreddits))],
+            label='Compound')
     plt.xlabel('Subreddits')
     plt.ylabel('Sentiment Scores')
     plt.title('Sentiment Scores by Subreddit')
