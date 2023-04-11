@@ -131,13 +131,13 @@ def query_api():
 def visualize():
     with open('titles_and_emojis.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
-    barchart_subreddit(data)
+    # barchart_subreddit(data)
     average_subreddit(data)
-    heatmap(data, 'compound', 'Compound')
-    heatmap(data, 'pos', 'Positive')
-    heatmap(data, 'neg', 'Negative')
-    heatmap(data, 'neu', 'Neutral')
-    topemoji_sub_table(data)
+    # heatmap(data, 'compound', 'Compound')
+    # heatmap(data, 'pos', 'Positive')
+    # heatmap(data, 'neg', 'Negative')
+    # heatmap(data, 'neu', 'Neutral')
+    # topemoji_sub_table(data)
 
     return
 
@@ -327,7 +327,7 @@ def topemoji_sub_table(data):
 
 def main():
     # query_api()
-    # visualize()
+    visualize()
     # emoji_number()
 
     return
